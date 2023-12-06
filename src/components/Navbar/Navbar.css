@@ -23,7 +23,7 @@
         width: 35px;
         border-radius: 1000px;
         background-color: var(--primary-purple);
-        animation: colorFadeBubble 7s infinite;
+        animation: colorFadeBubble 5s infinite;
     }
 
     @keyframes colorFadeBubble {
