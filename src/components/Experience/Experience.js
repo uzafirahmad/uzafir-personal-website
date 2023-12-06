@@ -1,10 +1,13 @@
-import React from 'react'
-import './Experience.css'
+import React from "react";
+import "./Experience.css";
+import Navbar from "../Navbar/Navbar";
 
 const Experience = () => {
   return (
-    <div>Experience</div>
-  )
-}
+    <div>
+      <Navbar highlight="experience"/>
+    </div>
+  );
+};
 
-export default Experience
+export default Experience;

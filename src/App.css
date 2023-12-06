@@ -1,0 +1,17 @@
+:root {
+  --primary: rgb(27, 27, 29);
+  --secondary: rgb(42, 42, 44);
+
+  --primary-blue: rgb(37, 137, 255);
+
+  --primary-purple: #714dff;
+  --secondary-purple: rgb(124, 97, 255);
+  --tertiary-purple: rgb(145, 94, 255);
+  --quaternary-purple: #9c83ff;
+
+  --primary-yellow: #fff759;
+
+  --primary-pink: #e151ff;
+
+  --primary-text: #909090;
+}

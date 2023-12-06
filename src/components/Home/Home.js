@@ -1,19 +1,17 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
-import Experience from "../Experience/Experience";
-import starsbackground from "../../assets/starsbackground.svg";
+import blurrygradient from '../../assets/blurrygradient.svg'
 
 const Home = () => {
+
   return (
     <div>
-      <div id="starsbackground_div">
-        <img draggable="false" src={starsbackground} id="starsbackground_image" />
-      </div>
-      <Navbar />
-      <Experience />
-      <Footer />
+      <Navbar highlight="home"/>
+      <span id="nametext">Uzafir Ahmad.</span>
+      <span id="occupationtext">Full Stack Software Engineer</span>
+      <div className="blurrygradient_2"/>
+      <div className="blurrygradient_1"/>
     </div>
   );
 };
