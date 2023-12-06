@@ -1,0 +1,37 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#starsbackground_div {
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    position: fixed;
+    z-index: 0;
+    background-color: rgb(27,27,29);
+}
+
+#starsbackground_image {
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    position: absolute;
+    animation: opacityFade 3s infinite; 
+}
+
+@keyframes opacityFade {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+}
