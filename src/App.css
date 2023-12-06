@@ -1,6 +1,7 @@
 :root {
   --primary: rgb(27, 27, 29);
   --secondary: rgb(42, 42, 44);
+  --secondary-blur: rgba(42, 42, 44, 0.5);
 
   --primary-blue: rgb(37, 137, 255);
 
