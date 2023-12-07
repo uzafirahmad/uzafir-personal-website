@@ -4,6 +4,7 @@
   --secondary-blur: rgba(42, 42, 44, 0.5);
   --tertiary: rgb(52, 52, 54);
   --quaternary:  rgb(62, 62, 64);
+  --quaternary-blur:  rgb(62, 62, 64,0.4);
   --quinary: rgb(72, 72, 74);
 
   --primary-blue: rgb(37, 137, 255);
@@ -21,6 +22,7 @@
   
   --primary-green: #adff2f;
 
-  --primary-text: #a9a9a9;
-  --secondary-text: #909090;
+  --primary-text: #c7c7c7;
+  --secondary-text: #a9a9a9;
+  --tertiary-text: #909090;
 }

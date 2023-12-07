@@ -75,7 +75,7 @@
       height: 50vh; /* Adjust height as needed */
     }
     50% {
-      background-color: var(--primary-purple);
+      background-color: var(--primary-green);
       width: 30vw;
       height: 50vh; /* Adjust height as needed */
     }
@@ -154,9 +154,9 @@
     0%,
     100% {
       background-color: var(--primary-blue);
-      width: 20vw;
-      height: 20vh; /* Adjust height as needed */
-      opacity: 0.2;
+      width: 30vw;
+      height: 30vh; /* Adjust height as needed */
+      opacity: 0.4;
     }
     50% {
       background-color: var(--quaternary-purple);
@@ -186,7 +186,7 @@
       height: 50vh; /* Adjust height as needed */
     }
     50% {
-      background-color: var(--primary-purple);
+      background-color: var(--primary-green);
       width: 30vw;
       height: 50vh; /* Adjust height as needed */
     }

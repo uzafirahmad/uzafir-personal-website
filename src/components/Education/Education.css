@@ -109,10 +109,10 @@
         border-radius: 15px;
         /* Optional: Adds rounded corners */
         opacity: 0.2;
-        animation: colorFade2 5s infinite;
+        animation: colorFade_education 5s infinite;
     }
 
-    @keyframes colorFade2 {
+    @keyframes colorFade_education {
 
         0% {
             background-color: var(--primary-purple);
@@ -326,10 +326,10 @@
         border-radius: 15px;
         /* Optional: Adds rounded corners */
         opacity: 0.2;
-        animation: colorFade2 5s infinite;
+        animation: colorFade_education 5s infinite;
     }
 
-    @keyframes colorFade2 {
+    @keyframes colorFade_education {
 
         0% {
             background-color: var(--primary-purple);
