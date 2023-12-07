@@ -2,6 +2,9 @@
   --primary: rgb(27, 27, 29);
   --secondary: rgb(42, 42, 44);
   --secondary-blur: rgba(42, 42, 44, 0.5);
+  --tertiary: rgb(52, 52, 54);
+  --quaternary:  rgb(62, 62, 64);
+  --quinary: rgb(72, 72, 74);
 
   --primary-blue: rgb(37, 137, 255);
 
@@ -14,5 +17,10 @@
 
   --primary-pink: #e151ff;
 
-  --primary-text: #909090;
+  --primary-red: red;
+  
+  --primary-green: #adff2f;
+
+  --primary-text: #a9a9a9;
+  --secondary-text: #909090;
 }

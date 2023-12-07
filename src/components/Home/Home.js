@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div>
       <Navbar highlight="home"/>
-      <span id="nametext">Uzafir Ahmad.</span>
-      <span id="occupationtext">Full Stack Software Engineer</span>
+      <span className="pagetitle_home">Uzafir Ahmad.</span>
+      <span className="secondarytitle_home">Full Stack Software Engineer</span>
       <div className="blurrygradient_2"/>
       <div className="blurrygradient_1"/>
     </div>

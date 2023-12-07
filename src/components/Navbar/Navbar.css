@@ -1,10 +1,23 @@
 @import url('../../App.css');
 
-@media screen and (min-width: 501px) {
+body::-webkit-scrollbar {
+    width: 12px; /* Adjust the width as needed */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: var(--primary); /* Color of the scrollbar track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--quinary); /* Color of the scrollbar thumb */
+  }
+
+
+@media screen and (min-width: 601px) {
     #navbar_master{
         position: fixed;
         top: 20px;
-        width: 90%;
+        width: 500px;
         display: flex;
         flex-direction: row;
         background-color: var(--secondary);
@@ -93,7 +106,7 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #navbar_master{
         position: fixed;
         top: 20px;

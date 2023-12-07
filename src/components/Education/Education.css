@@ -1,6 +1,12 @@
 @import url("../../App.css");
 
 @media screen and (min-width: 1000px) {
+    #degree_info_and_iframe_Master{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     #education_master_div {
         /* background-color: red; */
         width: 90%;
@@ -18,17 +24,17 @@
     }
 
     .education_child_div {
-        background-color: var(--secondary-blur);
+        /* background-color: var(--secondary-blur); */
         width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
         padding: 20px;
         border-radius: 10px;
-        backdrop-filter: blur(30px);
+        /* backdrop-filter: blur(30px); */
 
         left: 50%;
-        top: 50%;
+        top: calc(50% + 26px);
         transform: translate(-50%, -50%);
         position: fixed;
         z-index: 2;
@@ -36,7 +42,7 @@
 
     .behance_container {
         width: 300px !important;
-        height: 130px !important;
+        height: 190px !important;
     }
 
     #time_and_title_master_div {
@@ -108,18 +114,32 @@
 
     @keyframes colorFade2 {
 
-        0%,
-        100% {
-            background-color: var(--tertiary-purple);
+        0% {
+            background-color: var(--primary-purple);
             width: 40vw;
             height: 50vh;
+        }
+
+        25% {
+            background-color: var(--primary-pink);
+            width: 50vw;
+            height: 40vh;
+            opacity: 0.1;
             /* Adjust height as needed */
+
         }
 
         50% {
-            background-color: var(--primary-purple);
+            background-color: var(--tertiary-purple);
             width: 50vw;
             height: 40vh;
+            /* Adjust height as needed */
+        }
+
+        100% {
+            background-color: var(--primary-purple);
+            width: 40vw;
+            height: 50vh;
             /* Adjust height as needed */
         }
     }
@@ -128,7 +148,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     #award_text{
@@ -141,6 +161,272 @@
         width: 24px;
         height: 24px;
     }
+
+    #gold_medal_info_and_iframe{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .education_gold_medal_info_and_icons_master{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education_gold_medal_title{
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    #education_gold_medal_info{
+        margin-top: 5px;
+        color: var(--primary-text);
+        text-align: justify;
+        text-justify: inter-word;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .icon_container_education{
+        cursor: pointer;
+        background-color: var(--secondary);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .icon_education{
+        font-size: 30px;
+        color: var(--primary-text);
+    }
+
+    .icons_master_container{
+        display: flex;
+        flex-direction: row;
+        margin-top: auto;
+    }
+
+    #youtube_container_icon{
+        margin-left: 10px;
+    }
 }
 
-@media screen and (max-width: 999px) {}
+@media screen and (max-width: 999px) {
+    #degree_info_and_iframe_Master{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #education_master_div {
+        /* background-color: red; */
+        width: 90%;
+        height: calc(100vh - 136px);
+        position: fixed;
+        z-index: 2;
+
+        top: 96px;
+        display: flex;
+        left: 50%;
+        flex-direction: column;
+        /* align-items: normal; */
+        justify-content: space-between;
+        transform: translate(-50%, 0%);
+    }
+
+    .education_child_div {
+        /* background-color: var(--secondary-blur); */
+        width: 90%;
+        height: auto;
+        min-height: calc(100vh - 76px);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        /* backdrop-filter: blur(30px); */
+
+        left: 50%;
+        top: 76px;
+        transform: translate(-50%, 0%);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .behance_container {
+        width: 100% !important;
+        height: 130px !important;
+        margin-top: 20px;
+    }
+
+    #time_and_title_master_div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #time_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #time_div_2018 {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--primary-purple);
+    }
+
+    #hr_time_div {
+        width: 2px;
+        height: 100%;
+        /* background: var(--primary-pink); */
+        background: linear-gradient(to bottom, var(--primary-purple), var(--quaternary-purple));
+        border: none;
+    }
+
+    #time_div_2022 {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--quaternary-purple);
+    }
+
+    #title_div {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        flex-direction: column;
+    }
+
+    #title_div_university {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--primary-purple);
+        margin-bottom: 50px;
+    }
+
+    #title_div_degree {
+        /* font-weight: 700; */
+        font-size: 16px;
+        color: var(--quaternary-purple);
+    }
+
+    .blurrygradient_education {
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        filter: blur(100px);
+        /* Adjust blur intensity as needed */
+        border-radius: 15px;
+        /* Optional: Adds rounded corners */
+        opacity: 0.2;
+        animation: colorFade2 5s infinite;
+    }
+
+    @keyframes colorFade2 {
+
+        0% {
+            background-color: var(--primary-purple);
+            width: 40vw;
+            height: 50vh;
+        }
+
+        25% {
+            background-color: var(--primary-pink);
+            width: 50vw;
+            height: 40vh;
+            opacity: 0.1;
+            /* Adjust height as needed */
+
+        }
+
+        50% {
+            background-color: var(--tertiary-purple);
+            width: 50vw;
+            height: 40vh;
+            /* Adjust height as needed */
+        }
+
+        100% {
+            background-color: var(--primary-purple);
+            width: 40vw;
+            height: 50vh;
+            /* Adjust height as needed */
+        }
+    }
+
+    #award_header_div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #award_text{
+        color: var(--primary-yellow);
+        font-size: 20px;
+    }
+
+    #award_image{
+        margin-left: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    #gold_medal_info_and_iframe{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .education_gold_medal_info_and_icons_master{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education_gold_medal_title{
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #education_gold_medal_info{
+        margin-top: 5px;
+        color: var(--primary-text);
+        text-align: justify;
+        text-justify: inter-word;
+        width: 100%;
+    }
+
+    .icon_container_education{
+        cursor: pointer;
+        background-color: var(--secondary);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .icon_education{
+        font-size: 30px;
+        color: var(--primary-text);
+    }
+
+    .icons_master_container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    #youtube_container_icon{
+        margin-left: 10px;
+    }
+}

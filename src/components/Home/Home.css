@@ -13,10 +13,10 @@
     transform: translate(-50%, -50%);
     filter: blur(100px); /* Adjust blur intensity as needed */
     border-radius: 15px; /* Optional: Adds rounded corners */
-    animation: colorFade1 5s infinite;
+    animation: colorfade1_home 5s infinite;
   }
   
-  @keyframes colorFade1 {
+  @keyframes colorfade1_home {
     0%,
     100% {
       background-color: var(--primary-yellow);
@@ -41,10 +41,10 @@
     filter: blur(100px); /* Adjust blur intensity as needed */
     border-radius: 15px; /* Optional: Adds rounded corners */
     opacity: 0.3;
-    animation: colorFade2 5s infinite;
+    animation: colorfade2_home 5s infinite;
   }
   
-  @keyframes colorFade2 {
+  @keyframes colorfade2_home {
     0%,
     100% {
       background-color: var(--tertiary-purple);
@@ -58,7 +58,7 @@
     }
   }
   
-  #nametext {
+  .pagetitle_home {
     color: white;
     font-weight: 900;
     font-size: 56px;
@@ -70,7 +70,7 @@
     white-space: nowrap;
   }
   
-  #occupationtext {
+  .secondarytitle_home {
       white-space: nowrap;
     color: var(--rainbow-text);
     font-weight: 400;
@@ -112,10 +112,10 @@
     transform: translate(-50%, -50%);
     filter: blur(100px); /* Adjust blur intensity as needed */
     border-radius: 15px; /* Optional: Adds rounded corners */
-    animation: colorFade1 5s infinite;
+    animation: colorfade1_home 5s infinite;
   }
   
-  @keyframes colorFade1 {
+  @keyframes colorfade1_home {
     0%,
     100% {
       background-color: var(--primary-yellow);
@@ -140,10 +140,10 @@
     filter: blur(100px); /* Adjust blur intensity as needed */
     border-radius: 15px; /* Optional: Adds rounded corners */
     opacity: 0.5;
-    animation: colorFade2 5s infinite;
+    animation: colorfade2_home 5s infinite;
   }
   
-  @keyframes colorFade2 {
+  @keyframes colorfade2_home {
     0%,
     100% {
       background-color: var(--tertiary-purple);
@@ -157,7 +157,7 @@
     }
   }
   
-  #nametext {
+  .pagetitle_home {
     color: white;
     font-weight: 900;
     font-size: 48px;
@@ -169,7 +169,7 @@
     white-space: nowrap;
   }
   
-  #occupationtext {
+  .secondarytitle_home {
       white-space: nowrap;
     color: var(--rainbow-text);
     font-weight: 400;
