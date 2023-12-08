@@ -191,7 +191,7 @@
 
     .icon_container_education{
         cursor: pointer;
-        background-color: var(--secondary);
+        background-color: var(--tertiary);
         padding: 5px 10px;
         border-radius: 10px;
         display: flex;
@@ -407,7 +407,7 @@
 
     .icon_container_education{
         cursor: pointer;
-        background-color: var(--secondary);
+        background-color: var(--tertiary);
         padding: 5px 10px;
         border-radius: 10px;
         display: flex;

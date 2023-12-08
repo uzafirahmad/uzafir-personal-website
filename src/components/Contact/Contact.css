@@ -110,7 +110,7 @@
   .contact_icon_container_grid{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    grid-template-columns: repeat(5, 1fr); /* 2 columns */
     grid-template-rows: repeat(1, 1fr);    /* 2 rows */
     gap: 15px; /* Optional gap between grid items */
   }
@@ -237,7 +237,7 @@
   .contact_icon_container_grid{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    grid-template-columns: repeat(5, 1fr); /* 2 columns */
     grid-template-rows: repeat(1, 1fr);    /* 2 rows */
     gap: 15px; /* Optional gap between grid items */
   }

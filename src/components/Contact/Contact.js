@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import Navbar from "../Navbar/Navbar";
-import { FaDiscord, FaWhatsapp, FaInstagram, FaCheck } from "react-icons/fa";
+import { FaDiscord, FaWhatsapp, FaInstagram, FaCheck, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 
 const Contact = () => {
@@ -27,6 +27,7 @@ const Contact = () => {
           {copied === "instagram" && <span>Instagram Page Opened!</span>}
           {copied === "whatsapp" && <span>WhatsApp Chat Opened!</span>}
           {copied === "gmail" && <span>Gmail Address Copied!</span>}
+          {copied === "linkedin" && <span>LinkedIn Page Opened!</span>}
         </span>
       )}
       <Navbar highlight="contact" />
@@ -102,6 +103,25 @@ const Contact = () => {
               />
             ) : (
               <BiLogoGmail className="contact_icon" />
+            )}
+          </div>
+          <div
+            onClick={() => {          
+              // Set the copied state
+              setcopied("linkedin");
+          
+              // Open WhatsApp web chat link
+              const instaUrl = `https://www.linkedin.com/in/uzafir-ahmad/`;
+              window.open(instaUrl, "_blank");
+            }}
+            className="contact_icon_container"
+          >
+            {copied === "linkedin" ? (
+              <FaCheck
+                className="contact_icon_check"
+              />
+            ) : (
+              <FaLinkedin className="contact_icon" />
             )}
           </div>
         </div>
