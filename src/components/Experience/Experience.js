@@ -145,10 +145,13 @@ const Experience = () => {
             </div>
           </div>
 
-          <div onClick={() => {
+          <div
+            onClick={() => {
               const companyURL = `https://www.linkedin.com/company/panacea-logics/`;
               window.open(companyURL, "_blank");
-            }} className="experience_company_image_and_linkedin_container">
+            }}
+            className="experience_company_image_and_linkedin_container"
+          >
             <img
               draggable="false"
               id="panacealogicslogo"
@@ -164,13 +167,222 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience_headers">My Responsibilities and Job Description</div>
+        <div className="experience_headers">My Role and Responsibilities</div>
+
+        <div className="experience_role_and_responsibilities_master">
+          <div className="experience_role_and_responsibilities_header">
+            <span className="experience_role_and_responsibilities_header_job_title">
+              Panacealogics
+            </span>
+            <img
+              src={panacealogicslogo}
+              id="panacealogics_image_experience_role_and_responsibilities"
+              className="experience_role_and_responsibilitie_image"
+            />
+          </div>
+          <div className="experience_role_and_responsibilities_body">
+            <div className="experience_role_and_responsibilities_body_timeline">
+              <span className="experience_role_and_responsibilities_timeline_ending_span">
+                Present
+              </span>
+              <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
+              <span className="experience_role_and_responsibilities_timeline_starting_span">
+                Oct 2023
+              </span>
+            </div>
+            <div className="experience_role_and_responsibilities_body_lists">
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Frontend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Employing jQuery and Ajax on the frontend to communicate with
+                  the server.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Utilizing HTML/CSS achieve responsive and aesthetically
+                  pleasing UIs.
+                </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Backend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Leading the development of web apps using Django templates to
+                  create responsive designs
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented database models with PostgreSQL
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="experience_role_and_responsibilities_master">
+          <div className="experience_role_and_responsibilities_header">
+            <span className="experience_role_and_responsibilities_header_job_title">
+              ML Sense Solutions
+            </span>
+            <img
+              src={mlsenselogo}
+              id="mlsense_image_experience_role_and_responsibilities"
+              className="experience_role_and_responsibilitie_image"
+            />
+          </div>
+          <div className="experience_role_and_responsibilities_body">
+            <div className="experience_role_and_responsibilities_body_timeline">
+              <span className="experience_role_and_responsibilities_timeline_ending_span">
+                Oct 2023
+              </span>
+              <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
+              <span className="experience_role_and_responsibilities_timeline_starting_span">
+                Mar 2022
+              </span>
+            </div>
+            <div className="experience_role_and_responsibilities_body_lists">
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Frontend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Spearheaded UI design across multiple projects using ReactJS
+                  and NextJS.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Employed HTML/CSS and JavaScript/TypeScript for robust
+                  frontend solutions.
+                </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Backend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Developed backend services using Django and Express, featuring
+                  RESTful APIs, JWT authentication, and web sockets for
+                  real-time communication.
+                </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                DevOps & Cloud
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Orchestrated application deployments to Google Cloud
+                  Platform's App Engine and Cloud Run using GitHub Actions and
+                  Docker, enhancing operational efficiency.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Leveraged GCP tools such as Firestore, BigQuery, and Cloud
+                  Functions for robust database management, data analysis, and
+                  serverless operations.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div className="black_sun_and_text_div">
           <img draggable="false" className="black_sun_image" src={blacksun} />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Projects</span>
         </div>
+
+        <div className="projects_grid_experience">
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/185978021?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/173360077?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/172970563?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/172969535?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/173360219?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/179660751?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/179663507?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <iframe
+          className="projects_grid_experience_item"
+          src="https://www.behance.net/embed/project/179663887?ilo0=1"
+          height="316"
+          width="404"
+          allowfullscreen
+          lazyload
+          frameborder="0"
+          allow="clipboard-write"
+          refererPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
       </div>
     </>
   );
