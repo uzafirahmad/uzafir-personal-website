@@ -1,0 +1,5 @@
+dispatch:
+  - url: "uzafir.com/*"
+    service: uzafir
+  - url: "www.uzafir.com/*"
+    service: uzafir
