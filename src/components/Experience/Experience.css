@@ -69,7 +69,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 350px;
+    height: 300px;
     z-index: 0;
     top: 70px;
   }
@@ -125,7 +125,7 @@
     font-size: 24px;
     color: var(--primary-text);
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     z-index: 3;
     position: relative;
   }
@@ -136,6 +136,8 @@
     justify-content: center;
     width: 100%;
     flex-direction: row;
+    position: relative;
+    z-index: 5;
   }
 
   .experience_picture_div_cloud {
@@ -207,6 +209,8 @@
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(1, 1fr);
     gap: 20px;
+    position: relative;
+    z-index: 5;
     justify-content: center;
   }
 
@@ -347,6 +351,7 @@
     gap: 20px;
     position: relative;
     z-index: 5;
+    margin-top: 10px;
   }
 
   .projects_grid_experience_item{
@@ -379,7 +384,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 300px;
+    height: 250px;
     z-index: 0;
     top: 70px;
   }
@@ -436,8 +441,8 @@
     align-items: center;
     font-size: 20px;
     color: var(--primary-text);
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 7px;
     z-index: 3;
     position: relative;
   }
@@ -568,6 +573,8 @@
     grid-template-rows: repeat(1, 1fr);
     gap: 20px;
     justify-content: center;
+    position: relative;
+    z-index: 5;
   }
 
   .experience_company_image_and_linkedin_container {
@@ -663,14 +670,14 @@
   }
 
   .experience_role_and_responsibilities_body_lists_title{
-    font-size: 20px;
+    font-size: 16px;
     color:white;
     font-weight: 700;
   }
 
   .experience_role_and_responsibilities_body_lists_li{
     color: var(--primary-text);
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .experience_role_and_responsibilities_timeline_ending_span{
@@ -710,10 +717,15 @@
     gap: 20px;
     position: relative;
     z-index: 5;
+    margin-top: 10px;
   }
 
   .projects_grid_experience_item{
     width: 100% !important;
     height: 150px !important;
+  }
+
+  .experience_role_and_responsibilities_body_lists_ul{
+    margin-top: 5px;
   }
 }

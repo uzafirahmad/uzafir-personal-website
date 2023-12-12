@@ -32,7 +32,7 @@ const Experience = () => {
           <span className="black_sun_text">Tech Stack</span>
         </div>
 
-        <div className="experience_headers">Languages</div>
+        <div style={{marginTop:"10px"}} className="experience_headers">Languages</div>
 
         <div className="experience_container">
           <div className="experience_picture_div">
@@ -121,7 +121,7 @@ const Experience = () => {
           <span className="black_sun_text">Work Experience</span>
         </div>
 
-        <div className="experience_headers">Companies I have Worked for</div>
+        <div style={{marginTop:"10px"}} className="experience_headers">Companies I have Worked for</div>
 
         <div className="experience_company_worked_for_grid">
           <div
@@ -221,7 +221,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience_role_and_responsibilities_master">
+        <div style={{marginBottom:"0px"}} className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
               ML Sense Solutions
