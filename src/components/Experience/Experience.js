@@ -27,7 +27,7 @@ const Experience = () => {
       {/* <div className="blurrygradient_experience" /> */}
       <div id="experience_master_div">
         <div className="black_sun_and_text_div">
-          <img draggable="false" className="black_sun_image" src={blacksun} />
+          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Tech Stack</span>
         </div>
@@ -36,15 +36,15 @@ const Experience = () => {
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img className="experience_picture" src={python} />
+            <img alt='experience_picture' className="experience_picture" src={python} />
             <span className="experience_card_text">Python</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={typescript} />
+            <img alt='experience_picture' className="experience_picture" src={typescript} />
             <span className="experience_card_text">Typescript</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={javascript} />
+            <img alt='experience_picture' className="experience_picture" src={javascript} />
             <span className="experience_card_text">Javascript</span>
           </div>
         </div>
@@ -53,11 +53,11 @@ const Experience = () => {
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img className="experience_picture" src={reactjs} />
+            <img alt='experience_picture' className="experience_picture" src={reactjs} />
             <span className="experience_card_text">ReactJS</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={nextjs} />
+            <img alt='experience_picture' className="experience_picture" src={nextjs} />
             <span className="experience_card_text">NextJS</span>
           </div>
         </div>
@@ -66,19 +66,19 @@ const Experience = () => {
 
         <div className="experience_container_backend">
           <div className="experience_picture_div">
-            <img id="djangoimage" className="experience_picture" src={django} />
+            <img alt='experience_picture' id="djangoimage" className="experience_picture" src={django} />
             <span className="experience_card_text">Django</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={nodejs} />
+            <img alt='experience_picture' className="experience_picture" src={nodejs} />
             <span className="experience_card_text">ExpressJS</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={nestjs} />
+            <img alt='experience_picture' className="experience_picture" src={nestjs} />
             <span className="experience_card_text">NestJS</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={docker} />
+            <img alt='experience_picture' className="experience_picture" src={docker} />
             <span className="experience_card_text">Docker</span>
           </div>
         </div>
@@ -87,11 +87,11 @@ const Experience = () => {
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img className="experience_picture" src={postgresql} />
+            <img alt='experience_picture' className="experience_picture" src={postgresql} />
             <span className="experience_card_text">PostgreSQL</span>
           </div>
           <div className="experience_picture_div">
-            <img className="experience_picture" src={mongodb} />
+            <img alt='experience_picture' className="experience_picture" src={mongodb} />
             <span className="experience_card_text">MongoDB</span>
           </div>
         </div>
@@ -101,6 +101,7 @@ const Experience = () => {
         <div className="experience_container">
           <div className="experience_picture_div_cloud">
             <img
+              alt='googlecloudpic'
               id="googlecloudpic"
               className="experience_picture"
               src={googlecloud}
@@ -108,6 +109,7 @@ const Experience = () => {
           </div>
           <div className="experience_picture_div_cloud">
             <img
+              alt='digitaloceanpic'
               id="digitaloceanpic"
               className="experience_picture"
               src={digitalocean}
@@ -116,7 +118,7 @@ const Experience = () => {
         </div>
 
         <div className="black_sun_and_text_div">
-          <img draggable="false" className="black_sun_image" src={blacksun} />
+          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Work Experience</span>
         </div>
@@ -132,6 +134,7 @@ const Experience = () => {
             className="experience_company_image_and_linkedin_container"
           >
             <img
+              alt='mlsenselogo'
               draggable="false"
               id="mlsenselogo"
               className="companylogo_experience_worked_for"
@@ -153,6 +156,7 @@ const Experience = () => {
             className="experience_company_image_and_linkedin_container"
           >
             <img
+              alt='panacealogicslogo'
               draggable="false"
               id="panacealogicslogo"
               className="companylogo_experience_worked_for"
@@ -175,6 +179,7 @@ const Experience = () => {
               Panacealogics
             </span>
             <img
+              alt='panacealogics_image_experience_role_and_responsibilities'
               src={panacealogicslogo}
               id="panacealogics_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
@@ -227,6 +232,7 @@ const Experience = () => {
               ML Sense Solutions
             </span>
             <img
+              alt='mlsense_image_experience_role_and_responsibilities'
               src={mlsenselogo}
               id="mlsense_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
@@ -288,7 +294,7 @@ const Experience = () => {
         </div>
 
         <div className="black_sun_and_text_div">
-          <img draggable="false" className="black_sun_image" src={blacksun} />
+          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Projects</span>
         </div>

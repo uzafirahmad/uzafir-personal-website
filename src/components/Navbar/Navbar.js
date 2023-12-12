@@ -10,6 +10,7 @@ const Navbar = (props) => {
     <>
       <div id="starsbackground_div">
         <img
+          alt='starsbackground_image'
           draggable="false"
           style={{userSelect:"none"}}
           src={starsbackground}
