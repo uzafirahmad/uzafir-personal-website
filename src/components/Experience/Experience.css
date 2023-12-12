@@ -663,7 +663,7 @@
 
   .experience_role_and_responsibilities_body_timeline{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin-right: 15px;
     align-items: center;
     justify-content: center;
@@ -690,14 +690,14 @@
     color: var(--secondary-purple);
     white-space: nowrap;
     font-weight: 700;
-    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .experience_role_and_responsibilities_timeline_hr{
     width: 100%;
     height: 2px;
     /* background: var(--primary-pink); */
-    background: linear-gradient(to right, var(--primary-purple), var(--primary-pink));
+    background: linear-gradient(to left, var(--primary-purple), var(--primary-pink));
     border: none;
   }
 
@@ -705,7 +705,7 @@
     color: var(--primary-pink);
     white-space: nowrap;
     font-weight: 700;
-    margin-left: 5px;
+    margin-right: 5px;
   }
 
   #panacealogics_image_experience_role_and_responsibilities{
