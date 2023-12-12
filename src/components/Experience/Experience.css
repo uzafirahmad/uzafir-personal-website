@@ -306,7 +306,7 @@
   }
 
   .experience_role_and_responsibilities_body_lists_title{
-    font-size: 20px;
+    font-size: 18px;
     color:white;
     font-weight: 700;
   }
@@ -320,6 +320,7 @@
     color: var(--secondary-purple);
     white-space: nowrap;
     font-weight: 700;
+    font-size: 18px;
   }
 
   .experience_role_and_responsibilities_timeline_hr{
@@ -334,6 +335,7 @@
     color: var(--primary-pink);
     white-space: nowrap;
     font-weight: 700;
+    font-size: 18px;
   }
 
   #panacealogics_image_experience_role_and_responsibilities{
@@ -357,6 +359,10 @@
   .projects_grid_experience_item{
     width: 100% !important;
     height: 150px !important;
+  }
+
+  .experience_role_and_responsibilities_body_lists_ul{
+    margin-top: 5px;
   }
 }
 
