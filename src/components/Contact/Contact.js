@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import Navbar from "../Navbar/Navbar";
-import { FaDiscord, FaWhatsapp, FaInstagram, FaCheck, FaLinkedin } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaWhatsapp,
+  FaInstagram,
+  FaCheck,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 
 const Contact = () => {
@@ -28,6 +35,7 @@ const Contact = () => {
           {copied === "whatsapp" && <span>WhatsApp Chat Opened!</span>}
           {copied === "gmail" && <span>Gmail Address Copied!</span>}
           {copied === "linkedin" && <span>LinkedIn Page Opened!</span>}
+          {copied === "github" && <span>GitHub Page Opened!</span>}
         </span>
       )}
       <Navbar highlight="contact" />
@@ -37,15 +45,13 @@ const Contact = () => {
         <div className="contact_icon_container_grid">
           <div
             onClick={() => {
-              setcopied("discord")
-              navigator.clipboard.writeText(".wintern")
+              setcopied("discord");
+              navigator.clipboard.writeText(".wintern");
             }}
             className="contact_icon_container"
           >
             {copied === "discord" ? (
-              <FaCheck
-                className="contact_icon_check"
-              />
+              <FaCheck className="contact_icon_check" />
             ) : (
               <FaDiscord className="contact_icon" />
             )}
@@ -53,29 +59,30 @@ const Contact = () => {
           <div
             onClick={() => {
               const phoneNumber = "+923255275024";
-          
+
               // Set the copied state
               setcopied("whatsapp");
-          
+
               // Open WhatsApp web chat link
-              const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\+/g, '')}`;
+              const whatsappUrl = `https://wa.me/${phoneNumber.replace(
+                /\+/g,
+                ""
+              )}`;
               window.open(whatsappUrl, "_blank");
             }}
             className="contact_icon_container"
           >
             {copied === "whatsapp" ? (
-              <FaCheck
-                className="contact_icon_check"
-              />
+              <FaCheck className="contact_icon_check" />
             ) : (
               <FaWhatsapp className="contact_icon" />
             )}
           </div>
           <div
-            onClick={() => {          
+            onClick={() => {
               // Set the copied state
               setcopied("instagram");
-          
+
               // Open WhatsApp web chat link
               const instaUrl = `https://instagram.com/uzafirahmad`;
               window.open(instaUrl, "_blank");
@@ -83,9 +90,7 @@ const Contact = () => {
             className="contact_icon_container"
           >
             {copied === "instagram" ? (
-              <FaCheck
-                className="contact_icon_check"
-              />
+              <FaCheck className="contact_icon_check" />
             ) : (
               <FaInstagram className="contact_icon" />
             )}
@@ -93,23 +98,21 @@ const Contact = () => {
           <div
             onClick={() => {
               setcopied("gmail");
-              navigator.clipboard.writeText("uzafir525@gmail.com")
+              navigator.clipboard.writeText("uzafir525@gmail.com");
             }}
             className="contact_icon_container"
           >
             {copied === "gmail" ? (
-              <FaCheck
-                className="contact_icon_check"
-              />
+              <FaCheck className="contact_icon_check" />
             ) : (
               <BiLogoGmail className="contact_icon" />
             )}
           </div>
           <div
-            onClick={() => {          
+            onClick={() => {
               // Set the copied state
               setcopied("linkedin");
-          
+
               // Open WhatsApp web chat link
               const instaUrl = `https://www.linkedin.com/in/uzafir-ahmad/`;
               window.open(instaUrl, "_blank");
@@ -117,11 +120,26 @@ const Contact = () => {
             className="contact_icon_container"
           >
             {copied === "linkedin" ? (
-              <FaCheck
-                className="contact_icon_check"
-              />
+              <FaCheck className="contact_icon_check" />
             ) : (
               <FaLinkedin className="contact_icon" />
+            )}
+          </div>
+          <div
+            onClick={() => {
+              // Set the copied state
+              setcopied("github");
+
+              // Open WhatsApp web chat link
+              const gitUrl = `https://www.github.com/uzafirahmad/`;
+              window.open(gitUrl, "_blank");
+            }}
+            className="contact_icon_container"
+          >
+            {copied === "github" ? (
+              <FaCheck className="contact_icon_check" />
+            ) : (
+              <FaGithub className="contact_icon" />
             )}
           </div>
         </div>

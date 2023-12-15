@@ -30,12 +30,12 @@
     animation: colorfade1_contact 5s infinite;
   }
 
-  #copied_contact_span{
+  #copied_contact_span {
     position: fixed;
     color: var(--primary-green);
     z-index: 2;
     left: 50%;
-    top: 70%;
+    top: 75%;
     transform: translate(-50%, -50%);
   }
 
@@ -107,15 +107,15 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .contact_icon_container_grid{
+  .contact_icon_container_grid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 2 columns */
-    grid-template-rows: repeat(1, 1fr);    /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 15px; /* Optional gap between grid items */
   }
 
-  .contact_icon_container{
+  .contact_icon_container {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -125,12 +125,12 @@
     border-radius: 10px;
   }
 
-  .contact_icon{
+  .contact_icon {
     font-size: 32px;
     color: var(--primary-text);
   }
 
-  .contact_icon_check{
+  .contact_icon_check {
     font-size: 32px;
     color: var(--primary-green);
   }
@@ -234,15 +234,15 @@
     align-items: center;
   }
 
-  .contact_icon_container_grid{
+  .contact_icon_container_grid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 2 columns */
-    grid-template-rows: repeat(1, 1fr);    /* 2 rows */
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
     gap: 15px; /* Optional gap between grid items */
   }
 
-  .contact_icon_container{
+  .contact_icon_container {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -252,22 +252,23 @@
     border-radius: 10px;
   }
 
-  .contact_icon{
+  .contact_icon {
     font-size: 24px;
     color: var(--primary-text);
   }
 
-  .contact_icon_check{
+  .contact_icon_check {
     font-size: 24px;
     color: var(--primary-green);
   }
 
-  #copied_contact_span{
+  #copied_contact_span {
+    white-space: nowrap;
     position: fixed;
     color: var(--primary-green);
     z-index: 2;
     left: 50%;
-    top: 67%;
+    top: 73%;
     transform: translate(-50%, -50%);
   }
 }
