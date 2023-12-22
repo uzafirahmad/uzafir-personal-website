@@ -27,24 +27,43 @@ const Experience = () => {
       {/* <div className="blurrygradient_experience" /> */}
       <div id="experience_master_div">
         <div className="black_sun_and_text_div">
-          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
+          <img
+            alt="black_sun_image"
+            draggable="false"
+            className="black_sun_image"
+            src={blacksun}
+          />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Tech Stack</span>
         </div>
 
-        <div style={{marginTop:"10px"}} className="experience_headers">Languages</div>
+        <div style={{ marginTop: "10px" }} className="experience_headers">
+          Languages
+        </div>
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={python} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={python}
+            />
             <span className="experience_card_text">Python</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={typescript} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={typescript}
+            />
             <span className="experience_card_text">Typescript</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={javascript} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={javascript}
+            />
             <span className="experience_card_text">Javascript</span>
           </div>
         </div>
@@ -53,11 +72,19 @@ const Experience = () => {
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={reactjs} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={reactjs}
+            />
             <span className="experience_card_text">ReactJS</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={nextjs} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={nextjs}
+            />
             <span className="experience_card_text">NextJS</span>
           </div>
         </div>
@@ -66,19 +93,36 @@ const Experience = () => {
 
         <div className="experience_container_backend">
           <div className="experience_picture_div">
-            <img alt='experience_picture' id="djangoimage" className="experience_picture" src={django} />
+            <img
+              alt="experience_picture"
+              id="djangoimage"
+              className="experience_picture"
+              src={django}
+            />
             <span className="experience_card_text">Django</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={nodejs} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={nodejs}
+            />
             <span className="experience_card_text">ExpressJS</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={nestjs} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={nestjs}
+            />
             <span className="experience_card_text">NestJS</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={docker} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={docker}
+            />
             <span className="experience_card_text">Docker</span>
           </div>
         </div>
@@ -87,11 +131,19 @@ const Experience = () => {
 
         <div className="experience_container">
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={postgresql} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={postgresql}
+            />
             <span className="experience_card_text">PostgreSQL</span>
           </div>
           <div className="experience_picture_div">
-            <img alt='experience_picture' className="experience_picture" src={mongodb} />
+            <img
+              alt="experience_picture"
+              className="experience_picture"
+              src={mongodb}
+            />
             <span className="experience_card_text">MongoDB</span>
           </div>
         </div>
@@ -101,7 +153,7 @@ const Experience = () => {
         <div className="experience_container">
           <div className="experience_picture_div_cloud">
             <img
-              alt='googlecloudpic'
+              alt="googlecloudpic"
               id="googlecloudpic"
               className="experience_picture"
               src={googlecloud}
@@ -109,7 +161,7 @@ const Experience = () => {
           </div>
           <div className="experience_picture_div_cloud">
             <img
-              alt='digitaloceanpic'
+              alt="digitaloceanpic"
               id="digitaloceanpic"
               className="experience_picture"
               src={digitalocean}
@@ -118,12 +170,19 @@ const Experience = () => {
         </div>
 
         <div className="black_sun_and_text_div">
-          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
+          <img
+            alt="black_sun_image"
+            draggable="false"
+            className="black_sun_image"
+            src={blacksun}
+          />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Work Experience</span>
         </div>
 
-        <div style={{marginTop:"10px"}} className="experience_headers">Companies I have Worked for</div>
+        <div style={{ marginTop: "10px" }} className="experience_headers">
+          Companies I have Worked for
+        </div>
 
         <div className="experience_company_worked_for_grid">
           <div
@@ -134,7 +193,7 @@ const Experience = () => {
             className="experience_company_image_and_linkedin_container"
           >
             <img
-              alt='mlsenselogo'
+              alt="mlsenselogo"
               draggable="false"
               id="mlsenselogo"
               className="companylogo_experience_worked_for"
@@ -156,7 +215,7 @@ const Experience = () => {
             className="experience_company_image_and_linkedin_container"
           >
             <img
-              alt='panacealogicslogo'
+              alt="panacealogicslogo"
               draggable="false"
               id="panacealogicslogo"
               className="companylogo_experience_worked_for"
@@ -179,7 +238,7 @@ const Experience = () => {
               Panacealogics
             </span>
             <img
-              alt='panacealogics_image_experience_role_and_responsibilities'
+              alt="panacealogics_image_experience_role_and_responsibilities"
               src={panacealogicslogo}
               id="panacealogics_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
@@ -215,24 +274,27 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Leading the development of web apps using Django templates to
-                  create responsive designs
+                  Leading the development of web apps using Django templates and
+                  DRF
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Implemented database models with PostgreSQL
+                  Integrated ML models with Rest APIs
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div style={{marginBottom:"0px"}} className="experience_role_and_responsibilities_master">
+        <div
+          style={{ marginBottom: "0px" }}
+          className="experience_role_and_responsibilities_master"
+        >
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
               ML Sense Solutions
             </span>
             <img
-              alt='mlsense_image_experience_role_and_responsibilities'
+              alt="mlsense_image_experience_role_and_responsibilities"
               src={mlsenselogo}
               id="mlsense_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
@@ -268,9 +330,9 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Developed backend services using Django and Express, featuring
-                  RESTful APIs, JWT authentication, and web sockets for
-                  real-time communication.
+                  Developed backend services using Django, NestJS and ExpressJS,
+                  featuring RESTful APIs, JWT authentication, and web sockets
+                  for real-time communication.
                 </li>
               </ul>
 
@@ -294,101 +356,106 @@ const Experience = () => {
         </div>
 
         <div className="black_sun_and_text_div">
-          <img alt='black_sun_image' draggable="false" className="black_sun_image" src={blacksun} />
+          <img
+            alt="black_sun_image"
+            draggable="false"
+            className="black_sun_image"
+            src={blacksun}
+          />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Projects</span>
         </div>
 
         <div className="projects_grid_experience">
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/185978021?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/173360077?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/172970563?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/172969535?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/173360219?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/179660751?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/179663507?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-        <iframe
-          className="projects_grid_experience_item"
-          src="https://www.behance.net/embed/project/179663887?ilo0=1"
-          height="316"
-          width="404"
-          allowfullscreen
-          lazyload
-          frameborder="0"
-          allow="clipboard-write"
-          refererPolicy="strict-origin-when-cross-origin"
-        ></iframe>
-      </div>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/185978021?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/173360077?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/172970563?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/172969535?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/173360219?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/179660751?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/179663507?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <iframe
+            className="projects_grid_experience_item"
+            src="https://www.behance.net/embed/project/179663887?ilo0=1"
+            height="316"
+            width="404"
+            allowfullscreen
+            lazyload
+            frameborder="0"
+            allow="clipboard-write"
+            refererPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
       </div>
     </>
   );
