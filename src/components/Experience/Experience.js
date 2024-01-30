@@ -260,12 +260,8 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Employing jQuery and Ajax on the frontend to communicate with
-                  the server.
-                </li>
-                <li className="experience_role_and_responsibilities_body_lists_li">
-                  Utilizing HTML/CSS achieve responsive and aesthetically
-                  pleasing UIs.
+                  Used jQuery and Ajax on the frontend to interact with Django Templates.
+                  Employed HTML/CSS to create responsive UIs in NextJS and ReactJS.
                 </li>
               </ul>
 
@@ -274,11 +270,17 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Leading the development of web apps using Django templates and
-                  DRF
+                  Lead the development of APIs using Django and ExpressJs
                 </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                DevOps & Cloud
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Integrated ML models with Rest APIs
+                  Coordinated application rollouts on Google Cloud Platform's App Engine and
+                  Cloud Run through Azure Pipelines and Docker using Azure DevOps.
                 </li>
               </ul>
             </div>
@@ -316,12 +318,8 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Spearheaded UI design across multiple projects using ReactJS
-                  and NextJS.
-                </li>
-                <li className="experience_role_and_responsibilities_body_lists_li">
-                  Employed HTML/CSS and JavaScript/TypeScript for robust
-                  frontend solutions.
+                  Led UI design for various projects with ReactJS and NextJS. Utilized
+                  HTML/CSS and JavaScript/TypeScript for robust frontend solutions.
                 </li>
               </ul>
 
@@ -330,9 +328,9 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Developed backend services using Django, NestJS and ExpressJS,
-                  featuring RESTful APIs, JWT authentication, and web sockets
-                  for real-time communication.
+                  Developed backend services using Django, NestJS and ExpressJS, featuring
+                  RESTful APIs, JWT authentication, and web sockets for real-time
+                  communication.
                 </li>
               </ul>
 
@@ -341,14 +339,9 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Orchestrated application deployments to Google Cloud
-                  Platform's App Engine and Cloud Run using GitHub Actions and
-                  Docker, enhancing operational efficiency.
-                </li>
-                <li className="experience_role_and_responsibilities_body_lists_li">
-                  Leveraged GCP tools such as Firestore, BigQuery, and Cloud
-                  Functions for robust database management, data analysis, and
-                  serverless operations.
+                  Streamlined app deployments on GCP's App Engine and Cloud Run with
+                  GitHub Actions and Docker. Used GCP tools like Firestore, BigQuery, and
+                  Cloud Functions for robust database management and serverless operations.
                 </li>
               </ul>
             </div>
