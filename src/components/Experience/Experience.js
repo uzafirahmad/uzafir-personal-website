@@ -15,9 +15,12 @@ import python from "../../assets/python.svg";
 import javascript from "../../assets/javascript.svg";
 import nextjs from "../../assets/nextjs.svg";
 import reactjs from "../../assets/reactjs.svg";
+import awslogo from "../../assets/awslogo.svg";
 import panacealogicslogo from "../../assets/panacealogicslogo.svg";
+import transformlondonlogo from "../../assets/transformlondonlogo.svg";
 import mlsenselogo from "../../assets/mlsenselogo.svg";
 import linkedin from "../../assets/linkedin.svg";
+import { FaGlobe } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Experience = () => {
@@ -161,6 +164,14 @@ const Experience = () => {
           </div>
           <div className="experience_picture_div_cloud">
             <img
+              alt="googlecloudpic"
+              id="googlecloudpic"
+              className="experience_picture"
+              src={awslogo}
+            />
+          </div>
+          <div className="experience_picture_div_cloud">
+            <img
               alt="digitaloceanpic"
               id="digitaloceanpic"
               className="experience_picture"
@@ -228,9 +239,98 @@ const Experience = () => {
               </span>
             </div>
           </div>
+
+          <div
+            onClick={() => {
+              const companyURL = `https://transform.london/`;
+              window.open(companyURL, "_blank");
+            }}
+            className="experience_company_image_and_linkedin_container"
+          >
+            <img
+              alt="transformlondonlogo"
+              draggable="false"
+              id="transformlondonlogo"
+              className="companylogo_experience_worked_for"
+              src={transformlondonlogo}
+            />
+            <div className="experience_linkedin_and_compapany_name_worked_for_div">
+              <FaGlobe className="experience_linkedin_company_worked_for_logo" />
+              <span className="experience_worked_for_company_name">
+                Transform London
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="experience_headers">My Role and Responsibilities</div>
+
+        <div className="experience_role_and_responsibilities_master">
+          <div className="experience_role_and_responsibilities_header">
+            <span className="experience_role_and_responsibilities_header_job_title">
+              Transform London
+            </span>
+            <img
+              alt="transformlondon_image_experience_role_and_responsibilities"
+              src={transformlondonlogo}
+              id="transformlondon_image_experience_role_and_responsibilities"
+              className="experience_role_and_responsibilitie_image"
+            />
+          </div>
+          <div className="experience_role_and_responsibilities_body">
+            <div className="experience_role_and_responsibilities_body_timeline">
+              <span className="experience_role_and_responsibilities_timeline_ending_span">
+                Present
+              </span>
+              <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
+              <span className="experience_role_and_responsibilities_timeline_starting_span">
+                Jan 2024
+              </span>
+            </div>
+            <div className="experience_role_and_responsibilities_body_lists">
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Frontend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Utilized NextJS coupled with TypeScript to implement Web Apps optimized for performance and
+                  SEO
+                </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Backend Development
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented Redis alongside Django and Node APIs to make read operations 50 times faster
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Incorporated stripe payment processing to handle customer accounts
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Introduced passwordless and JWT authentication
+                </li>
+              </ul>
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                DevOps & Cloud
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Leveraged GitHub Actions to push containerized frontend and backend applications to GCP and AWS using
+                  Docker
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented Load Balancers to route traffic and enable a CDN to enhance Cloud Storage Bucket accessibility.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Developed automated email system using message queues
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
@@ -247,7 +347,7 @@ const Experience = () => {
           <div className="experience_role_and_responsibilities_body">
             <div className="experience_role_and_responsibilities_body_timeline">
               <span className="experience_role_and_responsibilities_timeline_ending_span">
-                Present
+                Jan 2024
               </span>
               <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
               <span className="experience_role_and_responsibilities_timeline_starting_span">
