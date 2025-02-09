@@ -240,7 +240,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             onClick={() => {
               const companyURL = `https://transform.london/`;
               window.open(companyURL, "_blank");
@@ -260,12 +260,12 @@ const Experience = () => {
                 Transform London
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="experience_headers">My Role and Responsibilities</div>
 
-        <div className="experience_role_and_responsibilities_master">
+        {/* <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
               Transform London
@@ -330,7 +330,7 @@ const Experience = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
