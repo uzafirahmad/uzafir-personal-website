@@ -16,8 +16,8 @@ import javascript from "../../assets/javascript.svg";
 import nextjs from "../../assets/nextjs.svg";
 import reactjs from "../../assets/reactjs.svg";
 import awslogo from "../../assets/awslogo.svg";
-import panacealogicslogo from "../../assets/panacealogicslogo.svg";
-import transformlondonlogo from "../../assets/transformlondonlogo.svg";
+import linterlabslogo from "../../assets/linterlabslogo.svg";
+import ordionlogo from "../../assets/ordionlogo.svg";
 import mlsenselogo from "../../assets/mlsenselogo.svg";
 import linkedin from "../../assets/linkedin.svg";
 import { FaGlobe } from "react-icons/fa";
@@ -153,7 +153,7 @@ const Experience = () => {
 
         <div className="experience_headers">Cloud Providers</div>
 
-        <div className="experience_container">
+        <div className="experience_containe_cloud">
           <div className="experience_picture_div_cloud">
             <img
               alt="googlecloudpic"
@@ -198,7 +198,7 @@ const Experience = () => {
         <div className="experience_company_worked_for_grid">
           <div
             onClick={() => {
-              const companyURL = `https://www.linkedin.com/company/ml-sense/`;
+              const companyURL = `https://www.mlsense.ai/`;
               window.open(companyURL, "_blank");
             }}
             className="experience_company_image_and_linkedin_container"
@@ -211,7 +211,7 @@ const Experience = () => {
               src={mlsenselogo}
             />
             <div className="experience_linkedin_and_compapany_name_worked_for_div">
-              <FaLinkedin className="experience_linkedin_company_worked_for_logo" />
+              <FaGlobe className="experience_linkedin_company_worked_for_logo" />
               <span className="experience_worked_for_company_name">
                 ML Sense Solutions
               </span>
@@ -220,29 +220,29 @@ const Experience = () => {
 
           <div
             onClick={() => {
-              const companyURL = `https://www.linkedin.com/company/panacea-logics/`;
+              const companyURL = `https://linterlabs.com/`;
               window.open(companyURL, "_blank");
             }}
             className="experience_company_image_and_linkedin_container"
           >
             <img
-              alt="panacealogicslogo"
+              alt="linterlabslogo"
               draggable="false"
-              id="panacealogicslogo"
+              id="linterlabslogo"
               className="companylogo_experience_worked_for"
-              src={panacealogicslogo}
+              src={linterlabslogo}
             />
             <div className="experience_linkedin_and_compapany_name_worked_for_div">
-              <FaLinkedin className="experience_linkedin_company_worked_for_logo" />
+              <FaGlobe className="experience_linkedin_company_worked_for_logo" />
               <span className="experience_worked_for_company_name">
-                Panacealogics
+                Linter Labs
               </span>
             </div>
           </div>
 
-          {/* <div
+          <div
             onClick={() => {
-              const companyURL = `https://transform.london/`;
+              const companyURL = `https://ordion.io/`;
               window.open(companyURL, "_blank");
             }}
             className="experience_company_image_and_linkedin_container"
@@ -252,27 +252,27 @@ const Experience = () => {
               draggable="false"
               id="transformlondonlogo"
               className="companylogo_experience_worked_for"
-              src={transformlondonlogo}
+              src={ordionlogo}
             />
             <div className="experience_linkedin_and_compapany_name_worked_for_div">
               <FaGlobe className="experience_linkedin_company_worked_for_logo" />
               <span className="experience_worked_for_company_name">
-                Transform London
+                Ordion.io
               </span>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="experience_headers">My Role and Responsibilities</div>
 
-        {/* <div className="experience_role_and_responsibilities_master">
+        <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
-              Transform London
+              Ordion.io
             </span>
             <img
               alt="transformlondon_image_experience_role_and_responsibilities"
-              src={transformlondonlogo}
+              src={ordionlogo}
               id="transformlondon_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
             />
@@ -284,7 +284,7 @@ const Experience = () => {
               </span>
               <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
               <span className="experience_role_and_responsibilities_timeline_starting_span">
-                Jan 2024
+                Dec 2024
               </span>
             </div>
             <div className="experience_role_and_responsibilities_body_lists">
@@ -293,8 +293,7 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Utilized NextJS coupled with TypeScript to implement Web Apps optimized for performance and
-                  SEO
+                  Implemented Prefetching, ISR, SSG and cache strategies with NextJS
                 </li>
               </ul>
 
@@ -303,13 +302,13 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Implemented Redis alongside Django and Node APIs to make read operations 50 times faster
+                  Implemented Redis alongside Node APIs to make read operations 50 times faster
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Incorporated stripe payment processing to handle customer accounts
+                  Converted monolithic architecture to microservices
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Introduced passwordless and JWT authentication
+                  Incorporated payment gateways and digital wallets
                 </li>
               </ul>
 
@@ -318,28 +317,33 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Leveraged GitHub Actions to push containerized frontend and backend applications to GCP and AWS using
-                  Docker
+                  Leveraged GitHub Actions to push containerized applications to GCP
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Implemented Load Balancers to route traffic and enable a CDN to enhance Cloud Storage Bucket accessibility.
+                  Implemented load balancers to distribute traffic and enhance scalability.
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Developed automated email system using message queues
+                  Implemented Cloud CDN to enhance accessibility.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Automated SSL certificate creation for customer domains
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented VPC network to isolate cloud resources
                 </li>
               </ul>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
-              Panacealogics
+              Linter Labs
             </span>
             <img
               alt="panacealogics_image_experience_role_and_responsibilities"
-              src={panacealogicslogo}
+              src={linterlabslogo}
               id="panacealogics_image_experience_role_and_responsibilities"
               className="experience_role_and_responsibilitie_image"
             />
@@ -347,7 +351,7 @@ const Experience = () => {
           <div className="experience_role_and_responsibilities_body">
             <div className="experience_role_and_responsibilities_body_timeline">
               <span className="experience_role_and_responsibilities_timeline_ending_span">
-                Jan 2024
+                Dec 2024
               </span>
               <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
               <span className="experience_role_and_responsibilities_timeline_starting_span">
@@ -360,8 +364,10 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Used jQuery and Ajax on the frontend to interact with Django Templates.
                   Employed HTML/CSS to create responsive UIs in NextJS and ReactJS.
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented WebRTC on frontend for peer-to-peer group video/audio calls
                 </li>
               </ul>
 
@@ -370,7 +376,13 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Lead the development of APIs using Django and ExpressJs
+                  Implemented Redis with Socket.io for messaging application
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Lead the development of APIs using Django, NestJS and ExpressJS
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Used a media streaming server with WebRTC to implement a video/audio
                 </li>
               </ul>
 
@@ -379,8 +391,10 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Coordinated application rollouts on Google Cloud Platform's App Engine and
-                  Cloud Run through Azure Pipelines and Docker using Azure DevOps.
+                  Used Azure Pipelines to deploy containerized apps to GCP Cloud Run and App Engine
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Deployed apps to AWS EC2, Beanstalk and Fargate
                 </li>
               </ul>
             </div>
@@ -418,8 +432,7 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Led UI design for various projects with ReactJS and NextJS. Utilized
-                  HTML/CSS and JavaScript/TypeScript for robust frontend solutions.
+                  Led UI design for various projects with ReactJS and NextJS.
                 </li>
               </ul>
 
@@ -428,9 +441,13 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Developed backend services using Django, NestJS and ExpressJS, featuring
-                  RESTful APIs, JWT authentication, and web sockets for real-time
-                  communication.
+                  Developed backend services using Django and ExpressJS
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Implemented auth with JWT and OAuth
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Incorporated web sockets with Daphne
                 </li>
               </ul>
 
@@ -439,9 +456,13 @@ const Experience = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Streamlined app deployments on GCP's App Engine and Cloud Run with
-                  GitHub Actions and Docker. Used GCP tools like Firestore, BigQuery, and
-                  Cloud Functions for robust database management and serverless operations.
+                  Deployed containerized apps to GCP's App Engine and Cloud Run with GitHub Actions
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Incorporated Firestore, CloudSQL and BigQuery for data storage
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Did cost reduction analysis on AWS services
                 </li>
               </ul>
             </div>
