@@ -3,3 +3,7 @@ dispatch:
     service: uzafir
   - url: "www.uzafir.com/*"
     service: uzafir
+  - url: "linterlabs.com/*"
+    service: linterlabs
+  - url: "www.linterlabs.com/*"
+    service: linterlabs
