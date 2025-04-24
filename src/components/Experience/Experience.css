@@ -329,6 +329,10 @@
     font-size: 18px;
     color: white;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
   }
 
   .experience_role_and_responsibilities_body_lists_li {
@@ -715,6 +719,9 @@
     font-size: 16px;
     color: white;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
 
   .experience_role_and_responsibilities_body_lists_li {

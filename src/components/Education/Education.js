@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Education.css";
 import { FaYoutube, FaGithub, FaStar } from "react-icons/fa";
+// import ist_logo from '../../assets/ist_logo.png'
 
 const Education = () => {
   return (
@@ -9,92 +10,81 @@ const Education = () => {
       <Navbar highlight="education" />
       {/* <div className="blurrygradient_education" /> */}
       <div className="education_child_div">
-        <div id="degree_info_and_iframe_Master">
-          <div id="time_and_title_master_div">
-            <div id="time_div">
-              <span id="time_div_2018">2018</span>
-              <hr id="hr_time_div"></hr>
-              <span id="time_div_2022">2022</span>
-            </div>
-            <div id="title_div">
-              <span id="title_div_university">
-                Institute of Space Technology
-              </span>
-              <span id="title_div_degree">
-                Bachelors of Electrical Engineering.
-              </span>
-            </div>
+        <div className="experience_role_and_responsibilities_master">
+          <div className="experience_role_and_responsibilities_header">
+            <span className="experience_role_and_responsibilities_header_job_title">
+              Institute of Space Technology
+            </span>
+            {/* <img
+              alt="transformlondon_image_experience_role_and_responsibilities"
+              src={ist_logo}
+              id="transformlondon_image_experience_role_and_responsibilities"
+              className="experience_role_and_responsibilitie_image"
+            /> */}
           </div>
-          <iframe
-            className="behance_container"
-            src="https://www.behance.net/embed/project/173362605?ilo0=1"
-            height="316"
-            width="404"
-            allowfullscreen
-            lazyload
-            frameborder="0"
-            allow="clipboard-write"
-            refererPolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-        <div id="gold_medal_info_and_iframe">
-          <div id="award_header_div">
-            <span id="award_text">Awards</span>
-            <FaStar id="award_icon" />
-          </div>
-          <div id="education_header_and_body">
-            <div className="education_gold_medal_info_and_icons_master">
-              <div id="education_gold_medal_title">
-                Gold Medal for best Final Year Project
-              </div>
-              <div id="education_gold_medal_info">
-                Created award-winning sign-language glove using machine learning
-                and google translate API which outputs hand gestures to speech
-                in any language. Recognized with gold medal at university.
-              </div>
-              <div className="icons_master_container">
-                <div
-                  onClick={() => {
-                    window.open(
-                      "https://github.com/uzafirahmad/sign_language_glove",
-                      "_blank"
-                    );
-                  }}
-                  className="icon_container_education"
-                >
-                  <FaGithub
-                    id="education_github_icon"
-                    className="icon_education"
-                  />
-                </div>
-                <div
-                  id="youtube_container_icon"
-                  onClick={() => {
-                    window.open(
-                      "https://www.youtube.com/watch?v=KwxwMZN3S8A&t",
-                      "_blank"
-                    );
-                  }}
-                  className="icon_container_education"
-                >
-                  <FaYoutube
-                    id="education_youtube_icon"
-                    className="icon_education"
-                  />
-                </div>
-              </div>
+          <div className="experience_role_and_responsibilities_body">
+            <div className="experience_role_and_responsibilities_body_timeline">
+              <span className="experience_role_and_responsibilities_timeline_ending_span">
+                2018
+              </span>
+              <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
+              <span className="experience_role_and_responsibilities_timeline_starting_span">
+                2022
+              </span>
             </div>
-            <iframe
-              className="behance_container"
-              src="https://www.behance.net/embed/project/173361195?ilo0=1"
-              height="316"
-              width="404"
-              allowfullscreen
-              lazyload
-              frameborder="0"
-              allow="clipboard-write"
-              refererPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <div className="experience_role_and_responsibilities_body_lists">
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Bachelors of Electrical Engineering
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Electronics & Embedded Systems
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Computer Networks & Security
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Digital Signal Processing
+                </li>
+              </ul>
+
+
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                <FaStar id="award_icon" />
+                <span id="award_text">Awarded Gold Medal</span>
+                {/* <span> - Best Final Year Project</span> */}
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Created award-winning sign-language glove using machine learning
+                  and google translate API which outputs hand gestures to speech
+                  in any language. Recognized with gold medal at university for best final year project.
+                  <div className="icons_master_container">
+                    <FaGithub
+                      onClick={() => {
+                        window.open(
+                          "https://github.com/uzafirahmad/sign_language_glove",
+                          "_blank"
+                        );
+                      }}
+                      id="education_github_icon"
+                      className="icon_education"
+                    />
+                    <FaYoutube
+                      onClick={() => {
+                        window.open(
+                          "https://www.youtube.com/watch?v=KwxwMZN3S8A&t",
+                          "_blank"
+                        );
+                      }}
+                      id="education_youtube_icon"
+                      className="icon_education"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
