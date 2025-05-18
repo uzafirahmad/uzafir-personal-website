@@ -469,7 +469,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="black_sun_and_text_div">
+        {/* <div className="black_sun_and_text_div">
           <img
             alt="black_sun_image"
             draggable="false"
@@ -478,9 +478,9 @@ const Experience = () => {
           />
           <div className="black_sun_blur"></div>
           <span className="black_sun_text">Projects</span>
-        </div>
+        </div> */}
 
-        <div className="projects_grid_experience">
+        {/* <div className="projects_grid_experience">
           <iframe
             className="projects_grid_experience_item"
             src="https://www.behance.net/embed/project/185978021?ilo0=1"
@@ -569,7 +569,7 @@ const Experience = () => {
             allow="clipboard-write"
             refererPolicy="strict-origin-when-cross-origin"
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </>
   );
