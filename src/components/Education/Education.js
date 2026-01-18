@@ -13,6 +13,64 @@ const Education = () => {
         <div className="experience_role_and_responsibilities_master">
           <div className="experience_role_and_responsibilities_header">
             <span className="experience_role_and_responsibilities_header_job_title">
+              Heriot Watt University
+            </span>
+            {/* <img
+              alt="transformlondon_image_experience_role_and_responsibilities"
+              src={ist_logo}
+              id="transformlondon_image_experience_role_and_responsibilities"
+              className="experience_role_and_responsibilitie_image"
+            /> */}
+          </div>
+          <div className="experience_role_and_responsibilities_body">
+            <div className="experience_role_and_responsibilities_body_timeline">
+              <span className="experience_role_and_responsibilities_timeline_ending_span">
+                2026
+              </span>
+              <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
+              <span className="experience_role_and_responsibilities_timeline_starting_span">
+                2025
+              </span>
+            </div>
+            <div className="experience_role_and_responsibilities_body_lists">
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                Masters of Software Engineering
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  System Verification
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Computer Networks & Security
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  DevOps & Cloud Computing
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Artificial Intelligence
+                </li>
+              </ul>
+
+
+
+              <span className="experience_role_and_responsibilities_body_lists_title">
+                {/* <FaStar id="award_icon" /> */}
+                <span className="experience_role_and_responsibilities_body_lists_title">
+                  Thesis Topic
+                </span>
+                {/* <span> - Best Final Year Project</span> */}
+              </span>
+              <ul className="experience_role_and_responsibilities_body_lists_ul">
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Trajectory Dynamics Based User Intent Prediction For Link Prefetching
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="experience_role_and_responsibilities_master">
+          <div className="experience_role_and_responsibilities_header">
+            <span className="experience_role_and_responsibilities_header_job_title">
               Institute of Space Technology
             </span>
             {/* <img
@@ -25,11 +83,11 @@ const Education = () => {
           <div className="experience_role_and_responsibilities_body">
             <div className="experience_role_and_responsibilities_body_timeline">
               <span className="experience_role_and_responsibilities_timeline_ending_span">
-                2018
+                2022
               </span>
               <hr className="experience_role_and_responsibilities_timeline_hr"></hr>
               <span className="experience_role_and_responsibilities_timeline_starting_span">
-                2022
+                2018
               </span>
             </div>
             <div className="experience_role_and_responsibilities_body_lists">
@@ -45,6 +103,9 @@ const Education = () => {
                 </li>
                 <li className="experience_role_and_responsibilities_body_lists_li">
                   Digital Signal Processing
+                </li>
+                <li className="experience_role_and_responsibilities_body_lists_li">
+                  Control Systems
                 </li>
               </ul>
 
@@ -88,7 +149,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
