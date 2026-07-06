@@ -7,11 +7,11 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar highlight="home"/>
+      <Navbar highlight="home" />
       <span className="pagetitle_home">Uzafir Ahmad</span>
-      <span className="secondarytitle_home">Full Stack Software Engineer</span>
-      <div className="blurrygradient_2"/>
-      <div className="blurrygradient_1"/>
+      <span className="secondarytitle_home">Electrical Engineer & Computer Scientist</span>
+      <div className="blurrygradient_2" />
+      <div className="blurrygradient_1" />
     </div>
   );
 };
