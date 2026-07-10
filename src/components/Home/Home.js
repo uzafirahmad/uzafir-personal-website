@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Navbar highlight="home" />
       <span className="pagetitle_home">Uzafir Ahmad</span>
-      <span className="secondarytitle_home">Electrical Engineer & Computer Scientist</span>
+      <span className="secondarytitle_home">Mathematician & Computer Scientist</span>
       <div className="blurrygradient_2" />
       <div className="blurrygradient_1" />
     </div>
