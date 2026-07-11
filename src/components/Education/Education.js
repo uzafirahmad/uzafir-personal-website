@@ -62,7 +62,7 @@ const Education = () => {
               </span>
               <ul className="experience_role_and_responsibilities_body_lists_ul">
                 <li className="experience_role_and_responsibilities_body_lists_li">
-                  Trajectory Dynamics Based User Intent Prediction For Link Prefetching
+                  Thermodynamic Human-Computer Interaction
                 </li>
               </ul>
             </div>
