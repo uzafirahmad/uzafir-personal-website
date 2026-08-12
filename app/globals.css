@@ -539,6 +539,11 @@ h1 {
   font-weight: 800;
 }
 
+.check svg {
+  width: 11px;
+  height: 11px;
+}
+
 .item-heading {
   display: flex;
   flex-wrap: wrap;

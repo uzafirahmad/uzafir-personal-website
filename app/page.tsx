@@ -21,7 +21,17 @@ import typescriptLogo from "devicon/icons/typescript/typescript-original.svg";
 import Image, { type StaticImageData } from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import * as THREE from "three";
-import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaCode,
+  FaGithub,
+  FaGraduationCap,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMicrophone,
+  FaTrophy,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { SiNpm, SiWebrtc } from "react-icons/si";
 import { WAVE_DARK_PALETTE, WAVE_FRAGMENT_SHADER, WAVE_VERTEX_SHADER } from "./waveShaders";
 
@@ -305,7 +315,7 @@ function PublicationsContent() {
           <span className="publication-number">[1]</span>
           <span>
             Uzafir Ahmad Rafaq, Muaz Hassan, and Ali Muzaffar. 2026. <em>Thermodynamic Human-Computer Interaction.</em>{" "}
-            arXiv preprint arXiv:2608.07123 [cs.HC]. Under review at ACM CHI.
+            arXiv:2608.07123 [cs.HC]. Under review at ACM CHI.
           </span>
         </a>
       </li>
@@ -333,6 +343,18 @@ function ResearchProfileContent() {
       </div>
     </div>
   );
+}
+
+function SectionMarker({ section }: { section: Section["title"] }) {
+  const Icon = {
+    Education: FaGraduationCap,
+    Projects: FaCode,
+    "Invited Talks": FaMicrophone,
+    "Awards and Honours": FaTrophy,
+    Experience: FaBriefcase,
+  }[section as "Education" | "Projects" | "Invited Talks" | "Awards and Honours" | "Experience"];
+
+  return <span className="check" aria-hidden="true">{Icon ? <Icon /> : "✓"}</span>;
 }
 
 function Arrow() {
@@ -624,7 +646,7 @@ export default function Home() {
               {section.items.length > 0 && <ul>
                 {section.items.map((item, index) => (
                   <li key={`${section.title}-${item.title}-${item.secondary ?? item.href ?? index}`}>
-                    <span className="check" aria-hidden="true">✓</span>
+                    <SectionMarker section={section.title} />
                     <div>
                       <div className="item-heading">
                         {item.titleLinkLabel && item.href ? (
