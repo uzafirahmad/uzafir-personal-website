@@ -170,28 +170,39 @@ const sections: Section[] = [
   },
   {
     title: "Experience",
-    intro: "Building reliable software systems across product, cloud, real-time communication, and infrastructure.",
     items: [
       {
-        title: "Software Engineer",
-        detail: "Developed Next.js and Redis caching and prefetching, decomposed monoliths into services, and built containerized Google Cloud delivery pipelines.",
-        meta: "December 2024 to August 2025",
-        secondary: "Ordion.io",
-        secondaryMeta: "Remote, United States",
+        title: "Ordion.io",
+        meta: "Remote, United States",
+        secondary: "Software Engineer",
+        secondaryMeta: "December 2024 to August 2025",
+        details: [
+          "Developed caching and prefetching strategies using Next.js and Redis application workloads.",
+          "Contributed to the conversion of a monolithic application into independently deployable services.",
+          "Built containerized deployment pipelines for Google Cloud and implemented load balancing, content delivery and automated SSL certificate management.",
+        ],
       },
       {
-        title: "Software Engineer",
-        detail: "Led API development and delivered real-time messaging, group audio/video, and cloud deployments using Django, NestJS, Express, Redis, Socket.io, and WebRTC.",
-        meta: "October 2023 to December 2024",
-        secondary: "Linter Labs",
-        secondaryMeta: "Islamabad, Pakistan",
+        title: "Linter Labs",
+        meta: "Islamabad, Pakistan",
+        secondary: "Software Engineer",
+        secondaryMeta: "October 2023 to December 2024",
+        details: [
+          "Led API development using Django, NestJS, and ExpressJS.",
+          "Implemented real time messaging and group audio and video communication using Redis, Socket.io, WebRTC, and a media server.",
+          "Deployed containerized applications through Azure Pipelines to Google Cloud and deployed services on AWS infrastructure.",
+        ],
       },
       {
-        title: "Software Engineer",
-        detail: "Built React and Next.js interfaces, backend services, authentication, real-time communication, cloud data storage, and automated deployments.",
-        meta: "March 2022 to October 2023",
-        secondary: "ML Sense Solutions",
-        secondaryMeta: "Islamabad, Pakistan",
+        title: "ML Sense Solutions",
+        meta: "Islamabad, Pakistan",
+        secondary: "Software Engineer",
+        secondaryMeta: "March 2022 to October 2023",
+        details: [
+          "Developed web interfaces and backend services using React, Next.js, Django, and ExpressJS.",
+          "Implemented authentication, real time communication, and cloud data storage using Firestore, Cloud SQL, and BigQuery.",
+          "Automated container deployment to Google Cloud and conducted cloud cost analysis.",
+        ],
       },
     ],
   },
@@ -548,6 +559,33 @@ function HeroWave() {
 export default function Home() {
   const [active, setActive] = useState("links");
 
+  const personStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Uzafir A. Rafaq",
+    alternateName: "Uzafir Ahmad Rafaq",
+    url: "https://uzafir.com",
+    email: "mailto:uzafir525@gmail.com",
+    jobTitle: ["Mathematician", "Computer Scientist", "Software Engineer"],
+    sameAs: [
+      "https://github.com/uzafirahmad",
+      "https://linkedin.com/in/uzafir-ahmad",
+      "https://instagram.com/uzafirahmad",
+      "https://orcid.org/0009-0002-5206-4535",
+    ],
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Heriot-Watt University" },
+      { "@type": "CollegeOrUniversity", name: "Institute of Space Technology" },
+    ],
+    knowsAbout: [
+      "Physics-Informed Machine Learning",
+      "Human-Computer Interaction",
+      "Statistical Mechanics",
+      "Artificial Intelligence",
+      "High-Performance Computing",
+    ],
+  };
+
   useEffect(() => {
     const sectionElements = categories
       .map((category) => document.getElementById(idFor(category)))
@@ -599,6 +637,10 @@ export default function Home() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personStructuredData).replace(/</g, "\\u003c") }}
+      />
       <div className="page-rails" aria-hidden="true" />
       <header className="hero">
         <div className="hero-copy shell">
@@ -650,12 +692,7 @@ export default function Home() {
                     <div>
                       <div className="item-heading">
                         {item.titleLinkLabel && item.href ? (
-                          <strong className="item-title-with-link">
-                            <span className="item-title-name">{item.title}</span>{" "}
-                            <span className="item-title-parenthesis">(</span>
-                            <a className="item-title-url" href={item.href} target="_blank" rel="noreferrer">{item.titleLinkLabel}</a>
-                            <span className="item-title-parenthesis">)</span>
-                          </strong>
+                          <strong>{item.title}</strong>
                         ) : item.href ? (
                           <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
                         ) : (
@@ -663,6 +700,11 @@ export default function Home() {
                         )}
                         {item.meta && <span className="item-meta">{item.meta}</span>}
                       </div>
+                      {item.titleLinkLabel && item.href && (
+                        <a className="project-subheading" href={item.href} target="_blank" rel="noreferrer">
+                          {item.titleLinkLabel}
+                        </a>
+                      )}
                       {item.secondary && (
                         <div className="item-subheading">
                           <strong>{item.secondary}</strong>
@@ -677,7 +719,7 @@ export default function Home() {
                       )}
                       {item.links && (
                         <div className="item-links">
-                          {item.links.map((link) => (
+                          {item.links?.map((link) => (
                             <a
                               key={link.href}
                               className={link.variant ? `item-link item-link--${link.variant}` : undefined}

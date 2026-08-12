@@ -569,23 +569,20 @@ h1 {
   color: var(--navy);
 }
 
-.item-title-with-link {
-  display: inline;
-  color: var(--navy);
-  font-weight: 700;
-}
-
-.item-heading .item-title-name,
-.item-heading .item-title-parenthesis {
-  color: var(--navy);
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.item-heading .item-title-url {
+.project-subheading {
+  display: inline-block;
+  margin-top: 2px;
   color: var(--purple);
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.project-subheading:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .item-heading .item-meta {
