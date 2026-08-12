@@ -39,10 +39,10 @@ const categories = [
   "Links",
   "Research Profile",
   "Education",
-  "Projects",
-  "Skills",
-  "Invited Talks",
   "Awards and Honours",
+  "Invited Talks",
+  "Skills",
+  "Projects",
   "Experience",
   "Publications",
 ] as const;
@@ -112,6 +112,33 @@ const sections: Section[] = [
     ],
   },
   {
+    title: "Awards and Honours",
+    items: [
+      {
+        title: "Gold Medal for Best Final Year Project",
+        secondary: "Institute of Space Technology",
+        secondaryMeta: "Islamabad, Pakistan",
+        meta: "2022",
+      },
+    ],
+  },
+  {
+    title: "Invited Talks",
+    items: [
+      {
+        title: "Thermodynamic Artificial Intelligence",
+        detail: "Invited lecture for the Complexity Theory seminar on the thermodynamic aspects of artificial intelligence.",
+        meta: "13 October 2026",
+        secondary: "National Autonomous University of Mexico",
+        secondaryMeta: "Online",
+      },
+    ],
+  },
+  {
+    title: "Skills",
+    items: [],
+  },
+  {
     title: "Projects",
     items: [
       {
@@ -138,33 +165,6 @@ const sections: Section[] = [
         ],
         href: "https://beep.gov.pk",
         meta: "2024",
-      },
-    ],
-  },
-  {
-    title: "Skills",
-    items: [],
-  },
-  {
-    title: "Invited Talks",
-    items: [
-      {
-        title: "Thermodynamic Artificial Intelligence",
-        detail: "Invited lecture for the Complexity Theory seminar on the thermodynamic aspects of artificial intelligence.",
-        meta: "13 October 2026",
-        secondary: "National Autonomous University of Mexico",
-        secondaryMeta: "Online",
-      },
-    ],
-  },
-  {
-    title: "Awards and Honours",
-    items: [
-      {
-        title: "Gold Medal for Best Final Year Project",
-        secondary: "Institute of Space Technology",
-        secondaryMeta: "Islamabad, Pakistan",
-        meta: "2022",
       },
     ],
   },
