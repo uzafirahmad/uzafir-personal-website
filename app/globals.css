@@ -556,12 +556,19 @@ h1 {
 }
 
 .item-heading a {
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
 }
 
 .item-heading a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.item-heading a.experience-title-link {
+  color: var(--purple);
 }
 
 .item-heading strong {
@@ -596,12 +603,10 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 6px 24px;
-  /* margin-top: 4px; */
   color: var(--slate);
   font-size: 16px;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.45;
-  font-size: 14px;
   margin-bottom: 8px;
 }
 
@@ -612,6 +617,11 @@ h1 {
 
 .item-subheading span {
   color: #6b7c93;
+  font-size: 14px;
+}
+
+.item-mobile-meta {
+  display: none;
 }
 
 .card li p {
@@ -619,6 +629,10 @@ h1 {
   color: var(--slate);
   font-size: 16px;
   line-height: 1.55;
+}
+
+.card li p.item-detail-single {
+  margin-top: 10px;
 }
 
 .card ul.item-details {
@@ -706,9 +720,9 @@ h1 {
 }
 
 .item-link--npm:hover {
-  border-color: #9f2f2e !important;
+  border-color: var(--navy) !important;
   background: var(--white);
-  color: #9f2f2e !important;
+  color: var(--navy) !important;
 }
 
 .item-link-icon {
@@ -891,6 +905,46 @@ footer {
 
   .subtitle-subject {
     display: block;
+  }
+
+  .compact-mobile-item .item-heading {
+    gap: 0;
+  }
+
+  .compact-mobile-item .item-heading .item-meta,
+  .compact-mobile-item .item-subheading span {
+    display: none;
+  }
+
+  .compact-mobile-item .item-subheading {
+    display: block;
+    margin: 2px 0 0;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.4;
+  }
+
+  .compact-mobile-item .item-subheading strong {
+    font-weight: 500;
+  }
+
+  .item-mobile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 7px;
+    margin-top: 2px;
+    color: #6b7c93;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .item-mobile-meta-separator {
+    color: var(--purple);
+  }
+
+  .compact-mobile-item .item-detail-single,
+  .compact-mobile-item .item-details {
+    margin-top: 14px !important;
   }
 
   .social-links {

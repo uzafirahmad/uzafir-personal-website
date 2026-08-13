@@ -19,7 +19,7 @@ import reactLogo from "devicon/icons/react/react-original.svg";
 import redisLogo from "devicon/icons/redis/redis-original.svg";
 import typescriptLogo from "devicon/icons/typescript/typescript-original.svg";
 import Image, { type StaticImageData } from "next/image";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 import * as THREE from "three";
 import {
   FaBriefcase,
@@ -56,9 +56,10 @@ type Item = {
   details?: string[];
   href?: string;
   links?: Array<{ label: string; href: string; variant?: "primary" | "secondary" | "npm"; icon?: "npm" }>;
-  meta?: string;
+  duration?: string;
+  location?: string;
+  desktopMetaOrder?: "location-first";
   secondary?: string;
-  secondaryMeta?: string;
 };
 
 type Section = {
@@ -91,23 +92,23 @@ const sections: Section[] = [
           { label: "Code", href: "https://github.com/Intent-Link/intent-link-npm", variant: "primary" },
           { label: "Demo", href: "https://intentlink.dev", variant: "secondary" },
         ],
-        meta: "2025 to 2026",
+        duration: "2025 to 2026",
         secondary: "Heriot-Watt University",
-        secondaryMeta: "Dubai, United Arab Emirates",
+        location: "Dubai, United Arab Emirates",
       },
       {
         title: "BSc Electrical Engineering",
         details: [
+          "Dissertation: Sign language glove using machine learning and the Google Translate API to convert hand gestures into speech in multiple languages.",
           "Gold Medal for Best Final Year Project.",
-          "Final project: sign language glove using machine learning and the Google Translate API to convert hand gestures into speech in multiple languages.",
         ],
         links: [
           { label: "Code", href: "https://github.com/uzafirahmad/sign_language_glove", variant: "primary" },
-          { label: "Video", href: "https://www.youtube.com/watch?v=KwxwMZN3S8A&t", variant: "secondary" },
+          { label: "Demo", href: "https://www.youtube.com/watch?v=KwxwMZN3S8A&t", variant: "secondary" },
         ],
-        meta: "2018 to 2022",
+        duration: "2018 to 2022",
         secondary: "Institute of Space Technology",
-        secondaryMeta: "Islamabad, Pakistan",
+        location: "Islamabad, Pakistan",
       },
     ],
   },
@@ -117,8 +118,8 @@ const sections: Section[] = [
       {
         title: "Gold Medal for Best Final Year Project",
         secondary: "Institute of Space Technology",
-        secondaryMeta: "Islamabad, Pakistan",
-        meta: "2022",
+        location: "Islamabad, Pakistan",
+        duration: "2022",
       },
     ],
   },
@@ -126,11 +127,11 @@ const sections: Section[] = [
     title: "Invited Talks",
     items: [
       {
-        title: "Thermodynamic Artificial Intelligence",
-        detail: "Invited lecture for the Complexity Theory seminar on the thermodynamic aspects of artificial intelligence.",
-        meta: "13 October 2026",
+        title: "Thermodynamic aspects of Computer Science",
+        detail: "Invited to speak in the Complexity Theory seminar on the thermodynamic aspects of artificial intelligence at Mexico’s best university",
+        duration: "13 October 2026",
         secondary: "National Autonomous University of Mexico",
-        secondaryMeta: "Online",
+        location: "Online, Mexico",
       },
     ],
   },
@@ -145,26 +146,22 @@ const sections: Section[] = [
         title: "Intent Link",
         titleLinkLabel: "intentlink.dev",
         details: [
-          "A user target prediction library from MSc research turned into an open-source library for React and Next.js.",
-          "The world's most accurate and efficient prefetching library with an accuracy of 98% and a fetch-to-click ratio of 1.37.",
+          "A thermodynamics based target prediction and prefetching library achieving 98% accuracy and a fetch to click ratio of 1.37 in the reported evaluation.",
         ],
         links: [
           { label: "npm package", href: "https://www.npmjs.com/package/intent-link", variant: "npm", icon: "npm" },
-          { label: "Demo", href: "https://intentlink.dev", variant: "primary" },
         ],
         href: "https://intentlink.dev",
-        meta: "2026",
+        duration: "2026",
       },
       {
         title: "Beep",
         titleLinkLabel: "beep.gov.pk",
         details: [
-          "Implemented WebRTC with a MediaSoup signaling server to create audio and video calling for the military.",
-          "Enforced strict cybersecurity best practices to align with defense industry compliance standards.",
-          "Implemented microservices and microfrontends in Next.js and Express.js.",
+          "Implemented WebRTC with a MediaSoup signaling server to create audio and video calling for the government.",
         ],
         href: "https://beep.gov.pk",
-        meta: "2024",
+        duration: "2024",
       },
     ],
   },
@@ -173,35 +170,35 @@ const sections: Section[] = [
     items: [
       {
         title: "Ordion.io",
-        meta: "Remote, United States",
+        href: "https://ordion.io",
+        location: "Remote, United States",
         secondary: "Software Engineer",
-        secondaryMeta: "December 2024 to August 2025",
+        duration: "December 2024 to August 2025",
+        desktopMetaOrder: "location-first",
         details: [
-          "Developed caching and prefetching strategies using Next.js and Redis application workloads.",
-          "Contributed to the conversion of a monolithic application into independently deployable services.",
-          "Built containerized deployment pipelines for Google Cloud and implemented load balancing, content delivery and automated SSL certificate management.",
+          "Worked on ecommerce performance and cloud infrastructure across frontend and backend systems, including caching, prefetching, load balancing, and automated deployment."
         ],
       },
       {
         title: "Linter Labs",
-        meta: "Islamabad, Pakistan",
+        href: "https://linterlabs.com",
+        location: "Islamabad, Pakistan",
         secondary: "Software Engineer",
-        secondaryMeta: "October 2023 to December 2024",
+        duration: "October 2023 to December 2024",
+        desktopMetaOrder: "location-first",
         details: [
-          "Led API development using Django, NestJS, and ExpressJS.",
-          "Implemented real time messaging and group audio and video communication using Redis, Socket.io, WebRTC, and a media server.",
-          "Deployed containerized applications through Azure Pipelines to Google Cloud and deployed services on AWS infrastructure.",
+          "Worked on a live messaging and video conferencing platform across frontend and backend systems, including real time communication infrastructure.",
         ],
       },
       {
         title: "ML Sense Solutions",
-        meta: "Islamabad, Pakistan",
+        href: "https://mlsense.ai",
+        location: "Islamabad, Pakistan",
         secondary: "Software Engineer",
-        secondaryMeta: "March 2022 to October 2023",
+        duration: "March 2022 to October 2023",
+        desktopMetaOrder: "location-first",
         details: [
-          "Developed web interfaces and backend services using React, Next.js, Django, and ExpressJS.",
-          "Implemented authentication, real time communication, and cloud data storage using Firestore, Cloud SQL, and BigQuery.",
-          "Automated container deployment to Google Cloud and conducted cloud cost analysis.",
+          "Worked on cloud cost reduction, chatbot development, and data analytics projects across frontend, backend, and cloud systems.",
         ],
       },
     ],
@@ -558,6 +555,18 @@ function HeroWave() {
 
 export default function Home() {
   const [active, setActive] = useState("links");
+  const sidebarRef = useRef<HTMLElement>(null);
+
+  const handleCategoryClick = (event: MouseEvent<HTMLAnchorElement>, id: string) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    if (!section) return;
+
+    const targetTop = window.scrollY + section.getBoundingClientRect().top - window.innerHeight * 0.25;
+    window.history.pushState(null, "", `#${id}`);
+    window.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+    setActive(id);
+  };
 
   const personStructuredData = {
     "@context": "https://schema.org",
@@ -595,7 +604,7 @@ export default function Home() {
 
     const updateActive = () => {
       scheduled = false;
-      const marker = Math.min(Math.max(window.innerHeight * 0.28, 120), 240);
+      const marker = window.innerHeight * 0.5;
       const beforeSections = (sectionElements[0]?.getBoundingClientRect().top ?? 0) > marker;
       let current = sectionElements[0]?.id ?? "links";
 
@@ -607,13 +616,19 @@ export default function Home() {
         current = sectionElements.at(-1)?.id ?? current;
       }
 
-      if (current !== lastTracked) {
+      if (!beforeSections && current !== lastTracked) {
         lastTracked = current;
         setActive(current);
       }
 
-      if (beforeSections && window.location.hash) {
-        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+      if (beforeSections) {
+        if (lastTracked) {
+          lastTracked = "";
+          setActive("");
+        }
+        if (window.location.hash) {
+          window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+        }
       } else if (!beforeSections && window.location.hash !== `#${current}`) {
         window.history.replaceState(null, "", `#${current}`);
       }
@@ -634,6 +649,18 @@ export default function Home() {
       window.removeEventListener("resize", onScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (!window.matchMedia("(max-width: 820px)").matches) return;
+
+    const sidebar = sidebarRef.current;
+    const activeLink = sidebar?.querySelector<HTMLElement>(`[data-section="${active}"]`);
+    if (!sidebar || !activeLink) return;
+
+    const targetLeft = activeLink.offsetLeft - (sidebar.clientWidth - activeLink.offsetWidth) / 2;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    sidebar.scrollTo({ left: Math.max(0, targetLeft), behavior: reducedMotion ? "auto" : "smooth" });
+  }, [active]);
 
   return (
     <main>
@@ -657,7 +684,7 @@ export default function Home() {
       </header>
 
       <div className="content shell">
-        <aside className="sidebar" aria-label="Portfolio categories">
+        <aside ref={sidebarRef} className="sidebar" aria-label="Portfolio categories">
           <nav>
             {categories.map((category) => {
               const id = idFor(category);
@@ -665,8 +692,9 @@ export default function Home() {
                 <a
                   key={category}
                   className={active === id ? "active" : ""}
+                  data-section={id}
                   href={`#${id}`}
-                  onClick={() => setActive(id)}
+                  onClick={(event) => handleCategoryClick(event, id)}
                   aria-current={active === id ? "location" : undefined}
                 >
                   {category}
@@ -687,18 +715,33 @@ export default function Home() {
               {section.title === "Publications" && <PublicationsContent />}
               {section.items.length > 0 && <ul>
                 {section.items.map((item, index) => (
-                  <li key={`${section.title}-${item.title}-${item.secondary ?? item.href ?? index}`}>
+                  <li
+                    className={item.secondary && item.location && item.duration ? "compact-mobile-item" : undefined}
+                    key={`${section.title}-${item.title}-${item.secondary ?? item.href ?? index}`}
+                  >
                     <SectionMarker section={section.title} />
                     <div>
                       <div className="item-heading">
                         {item.titleLinkLabel && item.href ? (
                           <strong>{item.title}</strong>
                         ) : item.href ? (
-                          <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
+                          <a
+                            className={section.title === "Experience" ? "experience-title-link" : undefined}
+                            href={item.href}
+                            style={section.title === "Experience" ? { color: "var(--purple)" } : undefined}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {item.title}
+                          </a>
                         ) : (
                           <strong>{item.title}</strong>
                         )}
-                        {item.meta && <span className="item-meta">{item.meta}</span>}
+                        {(item.desktopMetaOrder === "location-first" ? item.location : item.duration) && (
+                          <span className="item-meta">
+                            {item.desktopMetaOrder === "location-first" ? item.location : item.duration}
+                          </span>
+                        )}
                       </div>
                       {item.titleLinkLabel && item.href && (
                         <a className="project-subheading" href={item.href} target="_blank" rel="noreferrer">
@@ -708,11 +751,23 @@ export default function Home() {
                       {item.secondary && (
                         <div className="item-subheading">
                           <strong>{item.secondary}</strong>
-                          {item.secondaryMeta && <span>{item.secondaryMeta}</span>}
+                          {(item.desktopMetaOrder === "location-first" ? item.duration : item.location) && (
+                            <span>{item.desktopMetaOrder === "location-first" ? item.duration : item.location}</span>
+                          )}
+                        </div>
+                      )}
+                      {item.secondary && item.location && item.duration && (
+                        <div className="item-mobile-meta">
+                          <span>{item.location}</span>
+                          <span className="item-mobile-meta-separator">•</span>
+                          <span>{item.duration}</span>
                         </div>
                       )}
                       {item.detail && <p>{item.detail}</p>}
-                      {item.details && (
+                      {item.details && item.details.length === 1 && (
+                        <p className="item-detail-single">{item.details[0]}</p>
+                      )}
+                      {item.details && item.details.length > 1 && (
                         <ul className="item-details">
                           {item.details.map((detail) => <li key={detail}>{detail}</li>)}
                         </ul>
