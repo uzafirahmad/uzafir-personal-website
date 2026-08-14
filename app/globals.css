@@ -306,6 +306,12 @@ h1 {
   transition: color 160ms ease;
 }
 
+.social-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
 .social-links a:hover .social-icon,
 .social-link:hover .social-icon {
   color: var(--brand-color, var(--purple));
@@ -719,7 +725,8 @@ h1 {
   color: #cb3837 !important;
 }
 
-.item-link--npm:hover {
+.item-link--npm:hover,
+.item-link--secondary:hover {
   border-color: var(--navy) !important;
   background: var(--white);
   color: var(--navy) !important;
@@ -735,12 +742,6 @@ h1 {
   border-color: #b9b5ff !important;
   background: var(--white);
   color: var(--purple) !important;
-}
-
-.item-link--secondary:hover {
-  border-color: var(--navy) !important;
-  background: var(--white);
-  color: var(--navy) !important;
 }
 
 .button {

@@ -26,7 +26,6 @@ import {
   FaCode,
   FaGithub,
   FaGraduationCap,
-  FaInstagram,
   FaLinkedinIn,
   FaMicrophone,
   FaTrophy,
@@ -213,7 +212,7 @@ const socialLinks = [
   { label: "GitHub", icon: FaGithub, color: "#181717", href: "https://github.com/uzafirahmad" },
   { label: "LinkedIn", icon: FaLinkedinIn, color: "#0a66c2", href: "https://linkedin.com/in/uzafir-ahmad" },
   { label: "WhatsApp", icon: FaWhatsapp, color: "#25d366", href: "https://wa.me/971507331350" },
-  { label: "Instagram", icon: FaInstagram, color: "#e4405f", href: "https://instagram.com/uzafirahmad" },
+  { label: "Google Scholar", logo: "/google-scholar.svg", href: "https://scholar.google.com/citations?user=d8cGGOEAAAAJ&hl=en" },
 ] as const;
 
 const contactLinks = [
@@ -263,12 +262,28 @@ function LinksContent() {
   return (
     <div className="links-content">
       <div className="social-links" aria-label="Social profiles">
-        {socialLinks.map((social) => (
-          <a key={social.label} href={social.href} target="_blank" rel="noreferrer" aria-label={social.label} style={{ "--brand-color": social.color } as CSSProperties}>
-            <social.icon className="social-icon" aria-hidden="true" />
-            <span>{social.label}</span>
-          </a>
-        ))}
+        {socialLinks.map((social) => {
+          const SocialIcon = "icon" in social ? social.icon : null;
+          const brandColor = "color" in social ? social.color : undefined;
+
+          return (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={social.label}
+              style={{ "--brand-color": brandColor } as CSSProperties}
+            >
+              {"logo" in social ? (
+                <Image className="social-logo" src={social.logo} alt="" width={34} height={34} aria-hidden="true" />
+              ) : SocialIcon ? (
+                <SocialIcon className="social-icon" aria-hidden="true" />
+              ) : null}
+              <span>{social.label}</span>
+            </a>
+          );
+        })}
       </div>
 
       <div className="contact-links">
