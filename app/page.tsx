@@ -211,14 +211,14 @@ const sections: Section[] = [
 const socialLinks = [
   { label: "GitHub", icon: FaGithub, color: "#181717", href: "https://github.com/uzafirahmad" },
   { label: "LinkedIn", icon: FaLinkedinIn, color: "#0a66c2", href: "https://linkedin.com/in/uzafir-ahmad" },
-  { label: "WhatsApp", icon: FaWhatsapp, color: "#25d366", href: "https://wa.me/971507331350" },
+  { label: "WhatsApp", icon: FaWhatsapp, color: "#25d366", href: "https://wa.me/923255275024" },
   { label: "Google Scholar", logo: "/google-scholar.svg", href: "https://scholar.google.com/citations?user=d8cGGOEAAAAJ&hl=en" },
 ] as const;
 
 const contactLinks = [
   { label: "ORCID", value: "0009-0002-5206-4535", href: "https://orcid.org/0009-0002-5206-4535" },
   { label: "Email", value: "uzafir525@gmail.com", href: "mailto:uzafir525@gmail.com" },
-  { label: "Phone", value: "+971 50 733 1350", href: "tel:+971507331350" },
+  { label: "Phone", value: "+92 325 5275024", href: "tel:+923255275024" },
 ] as const;
 
 type Skill = {
