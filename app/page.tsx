@@ -348,18 +348,18 @@ function PublicationsContent() {
 
 const researchBadges = [
   "Statistical mechanics",
-  "Artifical Intelligence",
+  "Geometric Deep Learning",
   "Human-Computer Interaction",
-  "High Performance Computing",
+  "Scientific Machine Learning",
 ] as const;
 
 function ResearchProfileContent() {
   return (
     <div className="research-profile-content">
       <p>
-        Electrical and software engineer pursuing research in Physics Informed Machine Learning and Human-Computer
+        Electrical and software engineer pursuing research in Physics-Informed Machine Learning, Geometric Deep Learning, and Human-Computer
         Interaction. Research deals with statistical mechanics, probabilistic modeling, dynamical systems, and human
-        participant experiments. Experienced in turning models into deployed, reproducible software systems.
+        participant experiments.
       </p>
       <div className="research-badges" aria-label="Research areas">
         {researchBadges.map((badge) => <span className="research-badge" key={badge}>{badge}</span>)}
