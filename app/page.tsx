@@ -10,6 +10,7 @@ import dockerLogo from "devicon/icons/docker/docker-original.svg";
 import expressLogo from "devicon/icons/express/express-original.svg";
 import googleCloudLogo from "devicon/icons/googlecloud/googlecloud-original.svg";
 import javascriptLogo from "devicon/icons/javascript/javascript-original.svg";
+import kubernetesLogo from "devicon/icons/kubernetes/kubernetes-original.svg";
 import mongoLogo from "devicon/icons/mongodb/mongodb-original.svg";
 import nestLogo from "devicon/icons/nestjs/nestjs-original.svg";
 import nextLogo from "devicon/icons/nextjs/nextjs-original.svg";
@@ -53,6 +54,7 @@ type Item = {
   titleLinkLabel?: string;
   detail?: string;
   details?: string[];
+  showSingleBullet?: boolean;
   href?: string;
   links?: Array<{ label: string; href: string; variant?: "primary" | "secondary" | "npm"; icon?: "npm" }>;
   duration?: string;
@@ -82,29 +84,12 @@ const sections: Section[] = [
     items: [
       {
         title: "MSc Software Engineering",
-        details: [
-          "Dissertation: Thermodynamic Human-Computer Interaction.",
-          "Developed a target prediction model using Hamiltonian, Lagrangian and statistical mechanics; implemented and evaluated the model across desktop and mobile interaction.",
-          "Derived the 70 year old empirical Fitts' Law and Schmidt's Law from thermodynamics.",
-        ],
-        links: [
-          { label: "Code", href: "https://github.com/Intent-Link/intent-link-npm", variant: "primary" },
-          { label: "Demo", href: "https://intentlink.dev", variant: "secondary" },
-        ],
         duration: "2025 to 2026",
         secondary: "Heriot-Watt University",
         location: "Dubai, United Arab Emirates",
       },
       {
         title: "BSc Electrical Engineering",
-        details: [
-          "Dissertation: Sign language glove using machine learning and the Google Translate API to convert hand gestures into speech in multiple languages.",
-          "Gold Medal for Best Final Year Project.",
-        ],
-        links: [
-          { label: "Code", href: "https://github.com/uzafirahmad/sign_language_glove", variant: "primary" },
-          { label: "Demo", href: "https://www.youtube.com/watch?v=KwxwMZN3S8A&t", variant: "secondary" },
-        ],
         duration: "2018 to 2022",
         secondary: "Institute of Space Technology",
         location: "Islamabad, Pakistan",
@@ -115,10 +100,30 @@ const sections: Section[] = [
     title: "Awards and Honours",
     items: [
       {
-        title: "Gold Medal for Best Final Year Project",
+        title: "Masters with Distinction",
+        secondary: "Heriot-Watt University",
+        location: "Dubai, United Arab Emirates",
+        duration: "October 2026",
+        details: [
+          "Derived the previously empirically determined, 70 year old Fitts’ Law and Schmidt’s Law from first principles using thermodynamics for my thesis.",
+        ],
+        showSingleBullet: true,
+        links: [
+          { label: "Demo", href: "https://intentlink.dev", variant: "secondary" },
+        ],
+      },
+      {
+        title: "Gold Medal for Best BSc Final Year Project ",
         secondary: "Institute of Space Technology",
         location: "Islamabad, Pakistan",
-        duration: "2022",
+        duration: "September 2022",
+        details: [
+          "Made a Sign Language glove using machine learning to convert hand gestures into speech for my thesis.",
+        ],
+        showSingleBullet: true,
+        links: [
+          { label: "Demo", href: "https://www.youtube.com/watch?v=KwxwMZN3S8A&t", variant: "secondary" },
+        ],
       },
     ],
   },
@@ -127,7 +132,8 @@ const sections: Section[] = [
     items: [
       {
         title: "Thermodynamic aspects of Computer Science",
-        detail: "Invited to speak in the Complexity Theory seminar on the thermodynamic aspects of artificial intelligence at Mexico’s best university",
+        details: ["Invited to speak at Mexico’s best university."],
+        showSingleBullet: true,
         duration: "13 October 2026",
         secondary: "National Autonomous University of Mexico",
         location: "Online, Mexico",
@@ -145,7 +151,7 @@ const sections: Section[] = [
         title: "Intent Link",
         titleLinkLabel: "intentlink.dev",
         details: [
-          "A thermodynamics based target prediction and prefetching library achieving 98% accuracy and a fetch to click ratio of 1.37 in the reported evaluation.",
+          "A JavaScript based user target prediction library from research, achieving 98% accuracy.",
         ],
         links: [
           { label: "npm package", href: "https://www.npmjs.com/package/intent-link", variant: "npm", icon: "npm" },
@@ -157,7 +163,7 @@ const sections: Section[] = [
         title: "Beep",
         titleLinkLabel: "beep.gov.pk",
         details: [
-          "Implemented WebRTC with a MediaSoup signaling server to create audio and video calling for the government.",
+          "Utilized WebRTC to create an audio and video calling product for the government.",
         ],
         href: "https://beep.gov.pk",
         duration: "2024",
@@ -242,6 +248,7 @@ const frameworks = [
   { label: "Express", logo: expressLogo },
   { label: "NestJS", logo: nestLogo },
   { label: "Docker", logo: dockerLogo },
+  { label: "Kubernetes", logo: kubernetesLogo },
   { label: "WebRTC", icon: SiWebrtc, color: "#333333" },
 ] satisfies readonly Skill[];
 
@@ -347,19 +354,17 @@ function PublicationsContent() {
 }
 
 const researchBadges = [
-  "Statistical mechanics",
-  "Geometric Deep Learning",
-  "Human-Computer Interaction",
+  "Control Theory",
   "Scientific Machine Learning",
+  "Human-Computer Interaction",
 ] as const;
 
 function ResearchProfileContent() {
   return (
     <div className="research-profile-content">
       <p>
-        Electrical and software engineer pursuing research in Physics-Informed Machine Learning, Geometric Deep Learning, and Human-Computer
-        Interaction. Research deals with statistical mechanics, probabilistic modeling, dynamical systems, and human
-        participant experiments.
+        Electrical and Software Engineer pursuing research in Control Theory and Computational Human-Computer
+        Interaction. Research deals with Statistical Mechanics, Probabilistic Modeling, and Dynamical Systems.
       </p>
       <div className="research-badges" aria-label="Research areas">
         {researchBadges.map((badge) => <span className="research-badge" key={badge}>{badge}</span>)}
@@ -779,10 +784,10 @@ export default function Home() {
                         </div>
                       )}
                       {item.detail && <p>{item.detail}</p>}
-                      {item.details && item.details.length === 1 && (
+                      {item.details && item.details.length === 1 && !item.showSingleBullet && (
                         <p className="item-detail-single">{item.details[0]}</p>
                       )}
-                      {item.details && item.details.length > 1 && (
+                      {item.details && (item.details.length > 1 || item.showSingleBullet) && (
                         <ul className="item-details">
                           {item.details.map((detail) => <li key={detail}>{detail}</li>)}
                         </ul>
