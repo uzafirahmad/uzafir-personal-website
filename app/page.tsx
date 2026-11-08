@@ -345,7 +345,7 @@ function PublicationsContent() {
           <span className="publication-number">[1]</span>
           <span>
             Uzafir Ahmad Rafaq, Muaz Hassan, and Ali Muzaffar. 2026. <em>Thermodynamic Human-Computer Interaction.</em>{" "}
-            arXiv:2608.07123 [cs.HC]. Under review at ACM CHI.
+            arXiv:2608.07123 [cs.HC]. Under review.
           </span>
         </a>
       </li>
